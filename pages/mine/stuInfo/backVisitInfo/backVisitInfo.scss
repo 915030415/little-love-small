@@ -1,0 +1,152 @@
+.backVisitInfo{
+  background-color:#ffffff;
+  width:750rpx;
+  .container.footerPost{// 为管理员时 具有的样式
+    padding-bottom:128rpx;
+  }
+  .container{
+    /*padding-top:128rpx;*/
+    padding-bottom:40rpx;
+    .time{
+      width:100%;
+      height:92.5rpx;
+      border-bottom:1rpx solid #E9E9E9;
+      padding-left:24rpx;
+      font-size: 32rpx;
+      color: #000000;
+      letter-spacing: 0;
+      line-height: 92.5rpx;
+    }
+    .title{
+      width:100%;
+      height:85.5rpx;
+      padding-left:24rpx;
+      line-height: 85.5rpx;
+      display:flex;
+      align-items: center;
+      text:first-of-type{
+        display:inline-block;
+        width:4rpx;
+        height:30rpx;
+        background: #FE4345;
+        border-radius: 2rpx;
+        margin-right:20rpx;
+      }
+      text:last-of-type{
+        font-size: 30rpx;
+        color: #000000;
+        letter-spacing: 0;
+      }
+    }
+    .content{
+      width:100%;
+      padding:0rpx 48rpx;
+      .box{
+        width:674rpx;
+        font-size: 28rpx;
+        color: #666666;
+        letter-spacing: 0;
+        text-align: justify;
+        line-height: 48rpx;
+      }
+    }
+    .score{
+      width:100%;
+      padding:0rpx 48rpx;
+      image{
+        border-radius: 20rpx;
+        margin-top:4rpx;
+        display:inline-block;
+        width:674rpx;
+        height:280rpx;
+      }
+    }
+    .mes{
+      background: #F2F2F2;
+      font-size: 28rpx;
+      color: #000000;
+      letter-spacing: 0;
+      height:90rpx;
+      line-height: 90rpx;
+      padding-left:24rpx;
+    }
+    .mesContent{
+      padding:24rpx;
+      background: #ffffff;
+      display:flex;
+      view:first-of-type{
+        flex:1;
+        width:180rpx;
+        image{
+          width:180rpx;
+          height:140rpx;
+        }
+      }
+      view:last-of-type{
+        width:498rpx;
+        padding-left:24rpx;
+        text{
+          display:block;
+          font-size: 26rpx;
+          color: #666666;
+          letter-spacing: 0;
+          margin-top:10rpx;
+        }
+        text:first-of-type{
+          margin-top:0rpx;
+          font-size: 30rpx;
+          color: #000000;
+          letter-spacing: 0;
+          line-height: 44rpx;
+          text{
+            display:inline-block;
+            width:30rpx;
+            height:30rpx;
+            background-size: cover;
+            /*border:1rpx solid red;*/
+          }
+          text.nan{
+            //background-image: url("../../../assets/image/mine/ico_nan.svg");
+          }
+          text.nv{
+            //background-image: url("../../../assets/image/mine/ico_nv.svg");
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.postRefuse {
+  .footer {
+    position: fixed;
+    bottom: 0rpx;
+    width: 100%;
+    height: 128rpx;
+    padding: 24rpx 40rpx;
+    background: #FFFFFF;
+
+    text {
+      display: inline-block;
+      width: 315rpx;
+      height: 80rpx;
+      text-align: center;
+      line-height: 80rpx;
+      font-size: 30rpx;
+      color: #FFFFFF;
+    }
+
+    text:first-of-type {
+      background-image: linear-gradient(-135deg, #FF4343 0%, #F04E69 100%);
+      box-shadow: 0 2rpx 20rpx 0 rgba(245, 57, 7, 0.20);
+      border-radius: 44.5rpx;
+    }
+
+    text:last-of-type {
+      background-image: linear-gradient(43deg, #22BB5F 0%, #22BBAA 100%);
+      box-shadow: 0 2rpx 20rpx 0 rgba(36, 182, 132, 0.20);
+      border-radius: 44.5rpx;
+    }
+  }
+}

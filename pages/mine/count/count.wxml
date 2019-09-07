@@ -1,0 +1,58 @@
+<!--pages/mine/count/count.wxml-->
+
+<view class="count">
+    <view class="container">
+        <view class = "weixBefore" wx:if = "{{!flagX}}" bindtap = "setCount" data-index = "1">
+            <text class = "weixP"></text>
+            <text>+ 设置微信收款账户</text>
+        </view>
+        <view class = "zhifBefore" wx:if = "{{!flagZ}}" bindtap = "setCount" data-index = "1">
+            <text class="zhifubP"></text>
+            <text>+ 设置支付宝收款账户</text>
+        </view>
+
+        <view class = "weixAfter" wx:if = "{{flagX}}" bindtap = "setCount" data-index = "1">
+            <view class = "left">
+                <view>
+                    <text class = "weip"></text>
+                    <text>微信收款账户</text>
+                </view>
+                <view>
+                    <text>APPID:</text>
+                    <text>{{params.appid_wa}}</text>
+                </view>
+                <view>
+                    <text>商户号:</text>
+                    <text>{{params.api_key}}</text>
+                </view>
+            </view>
+            <view class = "revise">
+                <text class = "xiu"></text>
+                <text>修改配置</text>
+            </view>
+        </view>
+        <view class = "zhifAfter" wx:if = "{{flagZ}}" bindtap = "setCount" data-index = "2">
+            <view class = "left">
+                <view>
+                    <text class = "zhip"></text>
+                    <text>支付宝收款账户</text>
+                </view>
+                <view>
+                    <text>APPID:</text>
+                    <text>
+               <!--wxa992cbacc667c49d-->
+               {{params.appid_ali}}
+             </text>
+                </view>
+                <view>
+                    <text>公钥:</text>
+                    <text>{{params.api_key}}</text>
+                </view>
+            </view>
+            <view class = "revise">
+                <text class = "xiu"></text>
+                <text>修改配置</text>
+            </view>
+        </view>
+    </view>
+</view>

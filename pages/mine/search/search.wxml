@@ -1,0 +1,252 @@
+
+<view class="search">
+    <view class="container">
+        <view class="search">
+            <input type="text"
+                   placeholder="搜索姓名或标题"
+                   bindinput = "inputChange"
+                   />
+            <text></text>
+        </view>
+        <view class="box1">
+            <text
+                    wx:for = "{{message}}"
+                    wx:key = "*this"
+                    class = "content {{activeClass[index]? 'active' : ''}}"
+                    bindtap = "removeClassAndgetStuMes"
+                    data-index = "{{index}}"
+            >{{item.mes + item.number}}</text>
+        </view>
+
+
+
+        <view class="passList">
+            <view class="mess"
+                 wx:if="{{!falgApply}}"
+            >
+                暂无数据
+            </view>
+
+            <!-- 我调查的学生-->
+            <view class="box" wx:if="{{flag1}}"
+                  wx:for = "{{studentName == '' ? stuMes:filterAfterStuMes}}"
+                 wx:key="{{item + index}}"
+            >
+                <view class="message" bindtap="info" data-stuid="{{item.student_id}}">
+                    <image src = "{{item.student_photo}}"></image>
+                    <view class="means">
+                        <view>
+                            {{item.student_name}}
+                        </view>
+                        <text class="status" style = "color:{{item.status2 == '资助中' ? '#24B684': (item.status2 == '申请中' ? '#F9AA21' : (item.status2 == '已结束资助' ? '#C5C5C5' : '#FE4345'))}}">{{item.student_stats == '4' ? '资格被取消' : (item.student_stats == 3? '已驳回':item.status2)}}</text>
+                        <view>
+                            {{item.student_birthday}}岁 | {{item.student_sex == 1 ? '男' : '女'}} | {{item.province}}{{item.city}}
+                        </view>
+                        <view>
+                            {{item.student_text}}
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+
+
+            <!--我资助的学生-->
+            <view class="underWay" wx:if = "{{flag7}}">
+                <view class="box"
+                     wx:for="{{studentName == '' ? stuMesHelp:filterAfterStuMesHelp}}"
+                     wx:key="*this"
+                >
+                    <view class="message" bindtap="info" data-stuid = "{{item.student_id}}" data-role = "help" data-userId = "{{item.user_id}}"
+                    >
+                        <image src = "{{item.student_photo}}"></image>
+                        <view class="means">
+                            <view>
+                                {{item.student_name}}
+                            </view>
+                            <view>
+                                {{item.student_birthday}}岁 | {{item.student_sex == 1 ? '男' : '女'}} | {{item.province}}{{item.city}}
+                            </view>
+                            <view>
+                                {{item.student_text}}
+                            </view>
+                            <view>
+                                资助金额：{{item.student_money}}元/学期
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+
+
+
+
+
+
+
+
+            <!---->
+            <!--<view class="boxVolunteer" wx:if="flag2">-->
+                <!--<view-->
+                        <!--class="message"-->
+                        <!--bindtap="volunteermes(item.id)"-->
+                        <!--wx:for="(item,index) in filterAfterVolunArrOrAllArr"-->
+                        <!--wx:key="index"-->
+                <!--&gt;-->
+                    <!--<img :src="item.photo" alt="">-->
+                    <!--<view class="means">-->
+                        <!--<view>-->
+                            <!--&lt;!&ndash;小明&ndash;&gt;-->
+                            <!--{{item.name}}-->
+                            <!--<text class="sex" :class = "{'nan':item.sex == 1,'nv':item.sex == 2}"></text>-->
+                        <!--</view>-->
+                        <!--<text class="time">-->
+              <!--&lt;!&ndash;2019-01-08&ndash;&gt;-->
+            <!--{{item.time}}-->
+            <!--</text>-->
+                        <!--<view>-->
+                            <!--&lt;!&ndash;职业：教师&ndash;&gt;-->
+                            <!--职业：{{item.job}}-->
+                        <!--</view>-->
+                        <!--<view>-->
+                            <!--&lt;!&ndash;称号：慈善大使&ndash;&gt;-->
+                            <!--&lt;!&ndash;称号:{{item.honor}}&ndash;&gt;-->
+                        <!--</view>-->
+                    <!--</view>-->
+                <!--</view>-->
+            <!--</view>-->
+
+            <!---->
+            <!---->
+            <!--<view class="boxVolunteer" wx:if="flag3">-->
+                <!--<view-->
+                        <!--class="message"-->
+                        <!--bindtap="info(item.student_id,role = 'M',item.user_id)"-->
+                        <!--wx:for="(item,index) in filterAfterStuAll"-->
+                        <!--wx:key="index"-->
+                <!--&gt;-->
+                    <!--<img :src="item.student_photo" alt="">-->
+                    <!--<view class="means">-->
+                        <!--<view>-->
+                            <!--&lt;!&ndash;小明&ndash;&gt;-->
+                            <!--{{item.student_name}}-->
+                            <!--<text class="sex" :class = "{'nan':item.sex == 1,'nv':item.sex == 2}"></text>-->
+                        <!--</view>-->
+                        <!--<text class="status">-->
+              <!--&lt;!&ndash;资助中&ndash;&gt;-->
+                            <!--&lt;!&ndash;{{item.student_stats}}&ndash;&gt;-->
+            <!--{{item.student_date}}-->
+                            <!--&lt;!&ndash;2019-01-08&ndash;&gt;-->
+            <!--</text>-->
+                        <!--<view>-->
+                            <!--&lt;!&ndash;10岁  |  男  |  湖南省株洲市&ndash;&gt;-->
+                            <!--{{item.student_birthday}}岁 | {{item.student_sex == 1 ? '男' : '女'}} | {{item.province}}{{item.city}}-->
+                            <!--&lt;!&ndash;职业：教师&ndash;&gt;-->
+                        <!--</view>-->
+                        <!--&lt;!&ndash;<view>&ndash;&gt;-->
+                        <!--&lt;!&ndash;&lt;!&ndash;单亲家庭，父亲因车祸失去活动能力，母…&ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;{{item.student_text}}&ndash;&gt;-->
+                        <!--&lt;!&ndash;&lt;!&ndash;称号：慈善大使&ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;</view>&ndash;&gt;-->
+                        <!--<view>-->
+                            <!--资助金额：{{item.student_money}}元/学期-->
+                        <!--</view>-->
+                    <!--</view>-->
+                <!--</view>-->
+            <!--</view>-->
+
+            <!---->
+            <!---->
+            <!--<view class="visit" wx:if = "flag4" >-->
+                <!--<view class="message"-->
+                     <!--wx:for = "(item,index) in filterVisiteBackStuListC"-->
+                     <!--bindtap="visit(item.id,item.student,indexStatus)"-->
+                <!--&gt;-->
+                    <!--<img :src="item.photo" alt="">-->
+                    <!--<view class="means">-->
+                        <!--<view>-->
+                            <!--&lt;!&ndash;小明&ndash;&gt;-->
+                            <!--{{item.name}}-->
+                        <!--</view>-->
+                        <!--<text class = "time">-->
+        <!--&lt;!&ndash;2010-10-09&ndash;&gt;-->
+        <!--{{item.time}}-->
+      <!--</text>-->
+                        <!--<view>-->
+                            <!--&lt;!&ndash;该生近期表现良好,在期中表彰中获得"三好学生"称号&ndash;&gt;-->
+                            <!--{{item.comment}}-->
+                        <!--</view>-->
+                    <!--</view>-->
+                <!--</view>-->
+            <!--</view>-->
+
+            <!---->
+            <!---->
+            <!--<view class="checkPending">-->
+                <!--<view-->
+                        <!--wx:if = "flag5"-->
+                        <!--wx:for="(item,index) in filterGetAidApplyList"-->
+                        <!--wx:key="index"-->
+                        <!--tag="view"-->
+                        <!--class="box"-->
+                        <!--:to="{name:'applyInfo',params:{id:item.student + '/' + item.user + '/' + item.id + '/' + indexStatus}}">-->
+                    <!--<view>-->
+                        <!--<text></text>-->
+                    <!--</view>-->
+                    <!--<view>-->
+        <!--<text>-->
+          <!--<text>-->
+            <!--&lt;!&ndash;小明&ndash;&gt;-->
+            <!--共建者{{item.username}}发来一封申请资助单，请审核-->
+          <!--</text>-->
+            <!--&lt;!&ndash;<text>&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;10-18 10:09&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;{{item.time}}&ndash;&gt;-->
+            <!--&lt;!&ndash;</text>&ndash;&gt;-->
+        <!--</text>-->
+                        <!--<text>-->
+          <!--&lt;!&ndash;这是感谢信这是感谢信这是感谢信这是感谢信这...&ndash;&gt;-->
+          <!--{{item.time}}-->
+        <!--</text>-->
+                    <!--</view>-->
+                <!--</view>-->
+            <!--</view>-->
+
+            <!--<view class="outCheckPending">-->
+                <!--<view-->
+                        <!--wx:if = "flag6"-->
+                        <!--wx:for="(item,index) in filterGetOutApplyList"-->
+                        <!--wx:key="index"-->
+                        <!--tag="view"-->
+                        <!--class="box"-->
+                        <!--:to="{name:'outInfo',params:{id:item.user_id + '+' + item.student_id + '+' + item.stu_out_id + '+' + indexStatus}}">-->
+                    <!--<view>-->
+                        <!--<text></text>-->
+                    <!--</view>-->
+                    <!--<view>-->
+        <!--<text>-->
+          <!--<text>-->
+            <!--&lt;!&ndash;小明&ndash;&gt;-->
+            <!--共建者{{item.user_name}}发来一封外出活动申请单-->
+          <!--</text>-->
+            <!--&lt;!&ndash;<text>&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;10-18 10:09&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;{{item.time}}&ndash;&gt;-->
+            <!--&lt;!&ndash;</text>&ndash;&gt;-->
+        <!--</text>-->
+                        <!--<text>-->
+          <!--&lt;!&ndash;这是感谢信这是感谢信这是感谢信这是感谢信这...&ndash;&gt;-->
+          <!--{{item.createTime}}-->
+        <!--</text>-->
+                    <!--</view>-->
+                <!--</view>-->
+            <!--</view>-->
+            <!---->
+            <!---->
+
+        </view>
+
+
+    </view>
+</view>

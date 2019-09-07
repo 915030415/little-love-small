@@ -1,0 +1,27 @@
+<!--components/headerInfo/headerInfo.wxml-->
+<view class="headerInfo">
+  <view class="picture">
+  </view>
+  <view class="message">
+    <view class="box">
+      <view>
+        <image src="{{stuInfo.student_photo}}"></image>
+      </view>
+      <view>
+        <text>{{stuInfo.student_name || '小明'}}</text>
+        <text class="{{stuInfo.student_sex == 1 ? 'nan' : ''}} {{stuInfo.student_sex == 2 ? 'nv' : ''}}"></text>
+      </view>
+      <view>
+        <text>{{stuInfo.age  || '10'}} 岁| {{stuInfo.province}}{{stuInfo.city}}</text>
+      </view>
+      <view>
+        <text>身份证：{{idCard || '******20080808****'}}</text>
+      </view>
+      <view>
+        <text style = "background:{{Info.status3 == '资助中' ? '#24B684': (Info.status3 == '申请中' ? '#F9AA21' : (Info.status3 == '已结束资助' ? '#C5C5C5' : '#FE4345'))}}">{{stuInfo.student_stats == 1 ? '待审核' : (stuInfo.student_stats2 == 0 ? '资助申请中' :(stuInfo.student_stats == 4 ? '资格被取消':(stuInfo.student_stats == 3? '已驳回':Info.status3)))}}</text>
+        <text style="color:{{Info.status3 == '资助中' ? '#24B684': (Info.status3 == '申请中' ? '#F9AA21' : (Info.status3 == '已结束资助' ? '#C5C5C5' : '#FE4345'))}}">资助金额：{{stuInfo.student_money || '0'}}元/学期</text>
+      </view>
+
+    </view>
+  </view>
+</view>

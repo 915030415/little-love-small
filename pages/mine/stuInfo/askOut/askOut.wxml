@@ -1,0 +1,36 @@
+<!--pages/mine/stuInfo/askOut/askOut.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <view class="section">
+            <picker mode="date" data = "date" value="{{date}}" start="1920-09-01" end="2020-09-01" bindchange="bindDateChange">
+                <view class="picker">
+                    <text> <text>活动日期</text><text>*</text></text>
+                    <text>{{date}}</text>
+                </view>
+            </picker>
+        </view>
+
+        <view class = "stuAddr">活动详细地址 <text>*</text></view>
+        <view class="section">
+            <textarea prop = "stuAddrHelp" id = "out_address"  maxlength = "100" bindinput="formInputChange" auto-height placeholder="请输入" />
+            <text class="word">{{out_addressLength}}/500</text>
+        </view>
+
+        <view class = "stuAddr">活动目的 <text>*</text></view>
+        <view class="section">
+            <textarea prop = "stuAddrHelp" id = "out_purpose"  maxlength = "500" bindinput="formInputChange" auto-height placeholder="请输入" />
+            <text class="word">{{out_purposeLength}}/500</text>
+        </view>
+
+
+        <view class = "stuAddr">活动内容 <text>*</text></view>
+        <view class="section">
+            <textarea prop = "stuAddrHelp" id = "out_context"  maxlength = "500" bindinput="formInputChange" auto-height placeholder="请输入" />
+            <text class="word">{{out_contextLength}}/500</text>
+        </view>
+
+    </view>
+    <view class="next">
+        <text class = "message" bindtap = "submitForm">提交</text>
+    </view>
+</view>

@@ -1,0 +1,68 @@
+.box{
+  width:750rpx;
+  padding:0rpx 24rpx;
+  //display:flex;
+  //justify-content: space-around;
+  // 父级 相对 定位 子级 绝对定位解决 父级高度不确定  子级 百分比计算
+  .message{
+    width:702rpx
+    height:180rpx;
+    /*height:203.5rpx;*/
+    border-bottom: 1rpx solid #E9E9E9;
+    margin-bottom:23.5rpx;
+    //display:flex;
+    position:relative;
+    //justify-content: flex-end;
+    image{
+      overflow: hidden;
+      //position:absolute;
+      width:180rpx;
+      height:180rpx;
+      //height:180rpx;
+      vertical-align:top;
+    }
+    .means{
+      overflow: hidden;
+      margin-left:24rpx;
+      width:498rpx;
+      height:180rpx;
+      // display: flex;
+      //flex-direction: column;
+      //justify-content: space-around;
+      /*position:absolute;*/
+      /*top:0rpx;*/
+      /*right:0rpx;*/
+      //left:204rpx;
+      //display:inline-block;
+      view{
+        letter-spacing: 0;
+        margin-top:8rpx;
+      }
+      view:nth-of-type(1){
+        font-size: 30rpx;
+        color: #000000;
+        line-height: 44rpx;
+      }
+      view:nth-of-type(2){
+        font-size: 26rpx;
+        color: #666666;
+
+      }
+      view:nth-of-type(3){
+        font-size: 26rpx;
+        color: #222222;
+        line-height: 37rpx;
+        // 文字 超出 截断 ... 显示
+        width:494rpx;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+      }
+      view:nth-of-type(4){
+        ont-size: 26rpx;
+        color: #F9AA21;
+
+      }
+    }
+  }
+}

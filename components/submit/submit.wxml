@@ -1,0 +1,4 @@
+<!--components/submit/submit.wxml-->
+<view class="next" bindtap = "click">
+    <text class="message {{title == '资助申请中' ? 'progress': ''}}">{{title}}</text>
+</view>

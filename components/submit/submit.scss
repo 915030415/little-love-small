@@ -1,0 +1,28 @@
+.next{
+  background-color:#ffffff;
+  //position:fixed;
+  //bottom:0rpx;
+  //z-index: 1000;
+  width:100%;
+  height:128rpx;
+  line-height:128rpx;
+  text-align:center;
+  .message {
+    display:inline-block;
+    width:630rpx;
+    height:80rpx;
+    line-height:80rpx;
+    text-align:center;
+    background-image: linear-gradient(-135deg, #FF4343 0%, #F04E69 100%);
+    box-shadow: 0 2rpx 20rpx 0 rgba(245,57,7,0.20);
+    border-radius: 45rpx;
+    font-size: 34rpx;
+    color: #FFFFFF;
+    letter-spacing: 0;
+  }
+  .progress{
+    box-shadow: none;
+    background-image:none;
+    background-color:#ccc;
+  }
+}

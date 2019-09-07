@@ -1,0 +1,42 @@
+<!--pages/mine/count/weix/weix.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <mp-cells>
+            <mp-cell prop="money" title="Appld" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="appid_wa" value="{{params.appid_wa}}"  class="weui-input" placeholder="请输入"/>
+            </mp-cell>
+            <mp-cell prop="money" title="商户号" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="bus_wa" value="{{params.bus_wa}}"   class="weui-input" placeholder="请输入"/>
+            </mp-cell>
+            <mp-cell prop="money" title=" API密钥" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="api_key"  value="{{params.api_key}}"  class="weui-input" placeholder="请输入"/>
+            </mp-cell>
+            <mp-cell prop="money" title="AppSecret" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="app_secret" value="{{params.app_secret}}"  class="weui-input" placeholder="请输入"/>
+            </mp-cell>
+        </mp-cells>
+        <view class = "photo">
+            <!--<text class = "start">*</text>-->
+            <view class='ui_cell'>
+                <view class='ui_cell_bd'>API证书<text>*</text></view>
+                <view class='ui_cell_ft'>{{uploaderNum}}/6</view>
+            </view>
+            <view class='ui_uploader_cell'>
+                <view class='ui_uploader_item' wx:for="{{uploaderList}}" wx:key="{{index}}">
+                    <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" type="clear" size="20" color="red"/>
+                    <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+                </view>
+                <view class='ui_uploader' bindtap='upload' wx:if="{{showUpload}}"></view>
+            </view>
+
+        </view>
+    </view>
+    <!--</view>-->
+    <view class="next footer">
+        <text class = "message" bind:tap = "submitForm">提交</text>
+    </view>
+</view>

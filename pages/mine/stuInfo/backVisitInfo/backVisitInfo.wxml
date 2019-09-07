@@ -1,0 +1,84 @@
+<!--pages/mine/stuInfo/backVisitInfo/backVisitInfo.wxml-->
+<view class="backVisitInfo">
+    <view class="container {{flagManage ? 'footerPost' :''}}">
+        <template wx:if = "{{flagManage}}">
+            <view class="mes">
+                学生基本信息
+            </view>
+            <view class="mesContent">
+                <view>
+                    <image src="{{stuMes.student_photo}}"></image>
+                </view>
+                <view>
+            <text>
+              <!--小明-->
+              {{stuMes.student_name}}
+              <text class = "{{stuMes.student_sex==1 ? 'nan' : 'nv'}}}"></text>
+            </text>
+                    <text>{{stuMes.student_birthday}}岁  |  {{stuMes.school_address}}</text>
+                    <text>身份证号码：{{stuMes.id_card}}</text>
+                </view>
+            </view>
+        </template>
+        <view class="time">
+            <!--回访日期：2018-10-09-->
+            回访日期： {{stuVisit.date}}
+        </view>
+        <view class="title">
+            <text></text>
+            <text>学习近况</text>
+        </view>
+        <view class="content">
+            <view class="box">
+                {{stuVisit.study}}
+            </view>
+        </view>
+        <view class="title">
+            <text></text>
+            <text>成绩单</text>
+        </view>
+        <view class="score">
+           <image
+                   wx:for = "{{score}}"
+                   wx:key="*this"
+                   src="{{item}}"
+           ></image>
+        </view>
+        <view class="title">
+            <text></text>
+            <text>家庭近况</text>
+        </view>
+        <view class="content">
+            <view class="box">
+                {{stuVisit.family}}
+            </view>
+        </view>
+        <view class="title">
+            <text></text>
+            <text>对学生的评价</text>
+        </view>
+        <view class="content">
+            <view class="box">
+                {{stuVisit.comment}}
+            </view>
+        </view>
+        <view class="title">
+            <text></text>
+            <text>学生照片</text>
+        </view>
+        <view class="score">
+            <image src="{{stuVisit.photo}}"></image>
+        </view>
+    </view>
+    <block wx:if="{{flagVisi}}">
+
+        <view class="postRefuse" wx:if = "{{flagVisi}}">
+            <view class="footer">
+                <text bindtap="refuse">驳回</text>
+
+                <text bindtap = "pass">通过</text>
+            </view>
+        </view>
+        <!--<post-refuse wx:if = "{{flagManage}}" :id = "index"></post-refuse>-->
+    </block>
+</view>

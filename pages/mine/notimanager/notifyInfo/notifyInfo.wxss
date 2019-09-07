@@ -1,0 +1,44 @@
+.notifyInfo .container {
+  /*padding-top:128rpx;*/
+  background-color: #ffffff;
+}
+.notifyInfo .container .title {
+  font-size: 36rpx;
+  color: #000000;
+  letter-spacing: 0.53rpx;
+  line-height: 34rpx;
+  padding: 40rpx 28rpx;
+}
+.notifyInfo .container .name {
+  padding-left: 24rpx;
+  /*display:flex;*/
+  /*flex-direction:column;*/
+  /*justify-content:space-between;*/
+}
+.notifyInfo .container .name text {
+  display: block;
+  font-size: 26rpx;
+  color: #999999;
+  line-height: 30rpx;
+}
+.notifyInfo .container .name text:first-of-type {
+  margin-bottom: 20rpx;
+}
+.notifyInfo .container .content {
+  margin-top: 40rpx;
+  padding: 0rpx 28rpx;
+}
+.notifyInfo .container .content text {
+  display: block;
+  font-size: 30rpx;
+  color: #2C3239;
+  text-align: justify;
+  line-height: 52rpx;
+}
+.notifyInfo .container .photo {
+  padding: 64rpx;
+}
+.notifyInfo .container .photo image {
+  width: 622rpx;
+  hegith: 280rpx;
+}

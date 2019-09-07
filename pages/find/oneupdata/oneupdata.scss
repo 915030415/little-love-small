@@ -1,0 +1,109 @@
+.page{
+  .page__bd{
+    padding-bottom: 228rpx;
+     .section{
+       position: relative;
+       display:flex;
+       align-items: center;
+       height:97rpx;
+       border-bottom:1rpx solid  #EBEFF2;;
+       .picker{
+         width:750rpx;
+         display: flex;
+         justify-content: space-between;
+         padding:0 24rpx;
+         text:first-of-type{
+           text:last-of-type{
+             color:red;
+           }
+         }
+         text:last-of-type{
+           //color:#B2B2B2;
+         }
+       }
+       textarea{
+         padding:24rpx;
+       }
+       .word{
+         position:absolute;
+         font-size: 30rpx;
+         color: #CECECE;
+         letter-spacing: 0;
+         text-align: center;
+         bottom:10rpx;
+         right:24rpx;
+       }
+     }
+    .weui-cell{
+      display:flex;
+      align-items: center;
+      justify-content: space-around;
+      height:97rpx;
+      border-bottom:1rpx solid  #EBEFF2;;
+      padding:0 24rpx;
+      .weui-cell__bd{
+        position:relative;
+        //text-align: right;
+        text.start{
+          color:red;
+          float:left;
+        }
+      }
+    }
+    .weui-input{
+      text-align: right;
+    }
+    .mes{
+      background-color: #EBEFF2;
+      height: 82rpx;
+      line-height: 82rpx;
+      padding-left:24rpx;
+      font-size: 30rpx;
+      color: #000000;
+    }
+    .stuAddr{
+      padding:0 24rpx;
+      text{
+        color:red;
+      }
+    }
+    .photo{
+      .ui_cell{
+        border-bottom:none;
+        .ui_cell_bd{
+          text{
+            color:red;
+          }
+        }
+      }
+    }
+  }
+  .next{
+    background-color:#ffffff;
+    //position:fixed;
+    //bottom:0rpx;
+    //z-index: 1000;
+    width:100%;
+    height:128rpx;
+    line-height:128rpx;
+    text-align:center;
+    .message {
+      display:inline-block;
+      width:630rpx;
+      height:80rpx;
+      line-height:80rpx;
+      text-align:center;
+      background-image: linear-gradient(-135deg, #FF4343 0%, #F04E69 100%);
+      box-shadow: 0 2rpx 20rpx 0 rgba(245,57,7,0.20);
+      border-radius: 45rpx;
+      font-size: 34rpx;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+    .progress{
+      box-shadow: none;
+      background-image:none;
+      background-color:#ccc;
+    }
+  }
+}

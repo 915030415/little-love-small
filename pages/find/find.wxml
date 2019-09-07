@@ -1,0 +1,30 @@
+<!--pages/find/find.wxml-->
+<view class = "find">
+    <!--<view class="header">-->
+    <!--<top-header :close = "true" title = "壹点爱基金"/>-->
+    <!--</view>-->
+    <view class="container">
+        <view class="search">
+            <input type="text" placeholder="搜索学生姓名" bindinput = "inputChange"/>
+            <text></text>
+        </view>
+        <view class="mess"
+             wx:if="{{!falgApply}}"
+        >
+            暂无数据
+        </view>
+        <stu-Mes-List
+                wx:for = "{{studentName == '' ? findStuMes : findAfterStuNameArr}}"
+                wx:key = "*this"
+                item = "{{item}}"
+                bind:tap = "information"
+                data-id = "{{item.student_id}}"
+        ></stu-Mes-List>
+        <view class="fill" wx:if = "{{role == 1}}">
+            <view class = "fill-box" bind:tap = "upData">
+                <text></text>
+                <text>学生资料</text>
+            </view>
+        </view>
+    </view>
+</view>

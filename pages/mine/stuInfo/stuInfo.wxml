@@ -1,0 +1,188 @@
+<!--pages/mine/stuInfo/stuInfo.wxml-->
+
+<view class="stuInfo">
+    <view class="container">
+        <headerInfo class="headerInfo" stuInfo="{{stuInfo}}"></headerInfo>
+
+        <view class="infoSlide" wx:if="{{flagSwi}}">
+            <view class="box">
+                <view
+                        wx:for="{{slide}}"
+                        wx:key="*this"
+                        class="slide {{ClassFlag[index] ? 'active':''}}}"
+                        bindtap="routeReplace" data-name="{{item.router}}" data-id="{{stuId}}" data-index="{{index}}">
+                    <text></text>
+                    <text>{{item.title}}</text>
+                </view>
+            </view>
+        </view>
+
+        <!--学生信息-->
+        <block wx-if="{{flagTab0}}">
+            <stuMessage stuInfo="{{stuInfo}}"></stuMessage>
+            <stuHistory class="stuHistory" moneyHistory="{{moneyHistory}}"></stuHistory>
+            <stuFamily class="stuFamily" familyInfo="{{familyInfo}}"></stuFamily>
+        </block>
+
+
+        <!-- 到款记录-->
+        <block wx-if="{{flagTab1}}">
+            <view class="backMoney">
+                <view class="mess"
+                      wx:if="{{!flagApply1}}"
+                >
+                    暂无数据
+                </view>
+                <view class="box"
+                      wx:if="{{flagApply1}}"
+                      wx:for="{{stu}}"
+                      wx:key="*this">
+                    <view>
+                        <text>上传时间：</text>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view>
+                        <text>收款人：</text>
+                        <text>{{item.studentName}}</text>
+                    </view>
+                    <view>
+                        <!--<img class="previewer-demo-img" :src="item.proof" width="100" bindtap="show(index)">-->
+                        <image class="previewer-demo-img" data-index="{{index}}" bindtap="showImg" src="{{item.proof}}"
+                               width="100"></image>
+                    </view>
+                </view>
+
+            </view>
+        </block>
+
+
+        <!--回访记录-->
+        <block wx-if="{{flagTab2}}">
+            <view class="backVisit">
+                <view class="mess"
+                      wx:if="{{!flagApply2}}"
+                >
+                    暂无数据
+                </view>
+                <view
+                        wx:for="{{visit}}"
+                        wx:key="{{item + index}}"
+                        class="box"
+                        wx:if="{{flagApply2}}"
+                        bindtap="seeVisitInfo"
+                        data-index="{{index}}"
+                >
+                    <!--:to="{name:'backVisitInfo',params:{id:index}}"-->
+                    <text>
+                        <image src="{{item.photo}}"></image>
+                    </text>
+                    <text>
+                        <text>{{item.study}}</text>
+                        <text>{{item.date}}</text>
+                    </text>
+                </view>
+            </view>
+        </block>
+
+        <!--感谢信-->
+        <block wx-if="{{flagTab3}}">
+            <view class="thank">
+                <view class="mess"
+                      wx:if="{{!flagApply3}}"
+                >
+                    暂无数据
+                </view>
+                <view
+                        wx:for="{{thankList}}"
+                        wx:key="{{item + index}}"
+                        wx:if="{{flagApply3}}"
+                        class="box"
+                        data-index="{{index}}"
+                        bindtap="seeThankInfo"
+                >
+                    <view>
+                        <text></text>
+                    </view>
+                    <view
+                            class="{{index == stu.length -1 ? 'noborder': ''}}}"
+                    >
+                        <text>
+                            <text>{{item.receiver}}</text>
+                            <text>{{item.time}}</text>
+                        </text>
+
+
+                        <text>{{item.title}}</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+
+        <!--外出记录-->
+        <block wx-if="{{flagTab4}}">
+            <view class="outdoor">
+                <view class="mess"
+                      wx:if="{{!flagApply4}}"
+                >暂无数据</view>
+                <view class="box"
+                      wx:if="{{flagApply4}}"
+                      wx:for="{{outdoorContent}}"
+                      wx:key='*this'
+                >
+                    <view class="content">
+                        <text>活动主题：{{item.out_purpose}}</text>
+                        <text>活动时间：{{item.time}}</text>
+                        <text>活动目的：{{item.out_purpose}}</text>
+                        <text>
+                            <text>活动内容：</text><text><text>1）{{item.out_context}}；</text></text>
+                        </text>
+                    </view>
+                    <view class="footer">
+                        <view class="status">
+                            <text>
+                                <text class="{{item.out_yes ==2?'success':(item.out_yes ==2 ? 'progress' : 'fail')}}"></text>
+                                <text>{{item.out_yes ==2 ? '审核通过': (item.out_yes ==1 ? '审核中' : '已驳回')}}</text>
+                            </text>
+                        </view>
+                        <view class="reason" wx:if="{{item.reject_reason}}">
+                            <text>原因：{{item.reject_reason}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+
+
+    </view>
+
+
+    <!-- 上传资料-->
+
+    <view class="postMes" wx:if="{{flag}}">
+        <text wx:for="{{mes}}" wx:key="*this" bindtap="post" data-index="{{index}}">{{item}}</text>
+    </view>
+
+    <view class="postMesHelp" wx:if="{{flagH}}">
+        <text wx:for="{{mes1}}" wx:key="*this" bindtap="post1" data-index="{{index}}">{{item}}</text>
+    </view>
+
+    <view class="postRefuse" wx:if="{{flagR}}">
+        <view class="footer">
+            <text bindtap="refuse">驳回</text>
+
+            <text bindtap="pass">通过</text>
+        </view>
+    </view>
+
+
+    <view class="cancel" wx:if="{{flagV}}">
+        <view class="footer">
+            <text bindtap="cancel">取消学生资格</text>
+        </view>
+    </view>
+
+</view>
+
+
+
+

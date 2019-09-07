@@ -1,0 +1,111 @@
+@charset "UTF-8";
+.headerInfo {
+  width: 750rpx;
+  height: 641.5rpx;
+  position: relative;
+}
+.headerInfo .picture {
+  height: 420rpx;
+  background-image: url("http://loveproject.oss-cn-beijing.aliyuncs.com/1566979175/学生详情感谢信背景.png");
+  background-position: center center;
+  background-size: 100% 100%;
+  /*background-size:cover;*/
+}
+.headerInfo .message {
+  position: absolute;
+  left: 0rpx;
+  top: 309rpx;
+  background: #FFFFFF;
+  /*border:1rpx solid red;*/
+  width: 750rpx;
+  height: 340rpx;
+  border-top-left-radius: 335rpx 100rpx;
+  border-top-right-radius: 335rpx 100rpx;
+  display: flex;
+  justify-content: center;
+}
+.headerInfo .message .box {
+  position: absolute;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 445rpx;
+  /*border:1rpx solid red;*/
+  /*view:nth-of-type(5){*/
+  /*text:first-of-type{*/
+  /*!*color: #999999;*!*/
+  /*}*/
+  /*color: #999999;*/
+  /*}*/
+}
+.headerInfo .message .box view:nth-of-type(1) {
+  width: 140rpx;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 140rpx;
+  line-height: 128rpx;
+  text-align: center;
+  box-shadow: 0 2rpx 30rpx 0 rgba(0, 0, 0, 0.2);
+}
+.headerInfo .message .box view:nth-of-type(1) image {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.headerInfo .message .box view:nth-of-type(2) text:first-of-type {
+  font-size: 32rpx;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 45rpx;
+}
+.headerInfo .message .box view:nth-of-type(2) text:last-of-type {
+  /*border:1rpx solid red;*/
+  display: inline-block;
+  border-radius: 50%;
+  /*background: #3E82F7;*/
+  width: 28rpx;
+  height: 28rpx;
+  background-size: cover;
+}
+.headerInfo .message .box view:nth-of-type(2) text.nan {
+  background-size: cover;
+}
+.headerInfo .message .box view:nth-of-type(2) text.nv {
+  background-size: cover;
+}
+.headerInfo .message .box view:nth-of-type(3) text {
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 33rpx;
+}
+.headerInfo .message .box view:nth-of-type(4) text {
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 33rpx;
+}
+.headerInfo .message .box view:nth-of-type(5) text:first-of-type {
+  display: inline-block;
+  border-radius: 30.5rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  height: 50rpx;
+  /*width:140rpx;*/
+  padding: 0rpx 10rpx;
+  line-height: 50rpx;
+  margin-right: 20rpx;
+}
+.headerInfo .message .box view:nth-of-type(5) text:last-of-type {
+  font-size: 28rpx;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 40rpx;
+}

@@ -1,0 +1,128 @@
+.headerInfo{
+  width:750rpx;
+  height:641.5rpx;
+  position:relative;
+  .picture{
+    height:420rpx;
+    background-image:url('http://loveproject.oss-cn-beijing.aliyuncs.com/1566979175/学生详情感谢信背景.png');
+    background-position:center center;
+    background-size:100% 100%;
+    /*background-size:cover;*/
+  }
+  .message{
+    position:absolute;
+    left:0rpx;
+    top:309rpx;
+    background: #FFFFFF;
+    /*border:1rpx solid red;*/
+    width:750rpx;
+    height:340rpx;
+    border-top-left-radius:335rpx 100rpx;
+    border-top-right-radius:335rpx 100rpx;
+    display:flex;
+    justify-content:center;
+    .box{
+      position:absolute;
+      bottom:0rpx;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:space-around;
+      height:445rpx;
+      /*border:1rpx solid red;*/
+      view:nth-of-type(1){
+        width:140rpx;
+        background-color:#ffffff;
+        border-radius:50%;
+        height:140rpx;
+        line-height: 128rpx;
+        text-align:center;
+        box-shadow: 0 2rpx 30rpx 0 rgba(0,0,0,0.20);
+        image{
+          width:128rpx;
+          height:128rpx;
+          border-radius:50%;
+        }
+      }
+      view:nth-of-type(2){
+        text:first-of-type{
+          font-size: 32rpx;
+          color: #000000;
+          letter-spacing: 0;
+          text-align: center;
+          line-height: 45rpx;
+        }
+        text:last-of-type{
+          /*border:1rpx solid red;*/
+          display:inline-block;
+          border-radius:50%;
+          /*background: #3E82F7;*/
+          width:28rpx;
+          height:28rpx;
+          //background-image: url("../../../assets/image/mine/ico_men.svg");
+          background-size: cover;
+
+        }
+        text.nan{
+          //background-image: url("../../../assets/image/mine/ico_nan.svg");
+          background-size: cover;
+        }
+        text.nv{
+          //background-image: url("../../../assets/image/mine/ico_nv.svg");
+          background-size: cover;
+        }
+
+      }
+      view:nth-of-type(3){
+        text{
+          font-size: 24rpx;
+          color: #999999;
+          letter-spacing: 0;
+          text-align: center;
+
+          line-height: 33rpx;
+        }
+      }
+      view:nth-of-type(4){
+        text{
+          font-size: 24rpx;
+          color: #999999;
+          letter-spacing: 0;
+          text-align: center;
+          line-height: 33rpx;
+        }
+      }
+      /*view:nth-of-type(5){*/
+      /*text:first-of-type{*/
+      /*!*color: #999999;*!*/
+      /*}*/
+      /*color: #999999;*/
+      /*}*/
+      view:nth-of-type(5){
+        text:first-of-type{
+          display:inline-block;
+          //background: #F9AA21;
+          border-radius: 30.5rpx;
+          font-size: 28rpx;
+          color: #FFFFFF;
+          letter-spacing: 0;
+          text-align: center;
+          height:50rpx;
+          /*width:140rpx;*/
+          padding:0rpx 10rpx;
+          line-height: 50rpx;
+          margin-right:20rpx;
+        }
+
+        text:last-of-type{
+          font-size: 28rpx;
+          //color: #F9AA21;
+          letter-spacing: 0;
+          text-align: center;
+          line-height: 40rpx;
+        }
+      }
+
+    }
+  }
+}

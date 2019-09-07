@@ -1,0 +1,138 @@
+<!--pages/mine/myinfo/myinfo.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <mp-cells>
+
+
+            <view class="section">
+            <picker bindchange="bindPickerChange" id = "role" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                    <text> <text>我的角色</text><text>*</text></text>
+                    <text>{{array[index]}}</text>
+                </view>
+            </picker>
+           </view>
+
+
+            <mp-cell prop="stuName" title="姓名" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="name" class="weui-input" value = "{{param.name}}" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+
+
+            <mp-cell  title="身份证号码" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange"  value = "{{param.idcard}}" bindblur = "getMesSexAndage" id="idcard" class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+
+
+            <view class="section">
+                <picker bindchange="bindPickerChange" id = "mysex" value="{{index1}}" range="{{array1}}">
+                    <view class="picker">
+                        <text> <text>性别</text><text>*</text></text>
+                        <text>{{array1[index1]}}</text>
+                    </view>
+                </picker>
+            </view>
+
+
+            <mp-cell prop="money" title="电话号码" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange"  id="phone"  value = "{{param.phone}}"  class="weui-input" placeholder="请输入"/>
+            </mp-cell>
+
+
+            <mp-cell  title="职业" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" value = "{{param.job}}"  id="job" class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+
+
+            <view class = "photo myphoto">
+                <!--<text class = "start">*</text>-->
+                <view class='ui_cell'>
+                    <view class='ui_cell_bd'>个人照片<text>*</text></view>
+                    <view class='ui_cell_ft'>{{uploaderNum}}/1</view>
+                </view>
+                <view class='ui_uploader_cell'>
+                    <view class='ui_uploader_item' wx:for="{{uploaderList}}" wx:key="{{index}}">
+                        <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" type="clear" size="20" color="red"/>
+                        <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+                    </view>
+                    <view class='ui_uploader' bindtap='upload' wx:if="{{showUpload}}"></view>
+                </view>
+            </view>
+
+            <view class="section">
+                <picker bindchange="bindPickerChange" id = "marriage" value="{{index2}}" range="{{array2}}">
+                    <view class="picker">
+                        <text> <text>婚姻状况</text><text>*</text></text>
+                        <text>{{array2[index2]}}</text>
+                    </view>
+                </picker>
+            </view>
+
+
+            <view class = "section">
+                <picker mode="region" id = "myaddr" bindchange="bindPickerChange" value="{{region}}">
+                    <view class="picker">
+                        <text><text>个人地址</text><text>*</text></text>
+                        <text>{{region[0]}}，{{region[1]}}，{{region[2]}}</text>
+                    </view>
+                </picker>
+            </view>
+            <view class = "stuAddr">个人住址详细 <text>*</text></view>
+            <view class="section">
+                <textarea id = "address"  value = "{{param.address}}"  maxlength = "100" bindinput="formInputChange" auto-height placeholder="请输入" />
+                <text class="word">{{myaddrXLength}}/100</text>
+            </view>
+
+            <mp-cell prop="stuName" title="个人邮箱" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange"  value = "{{param.email}}" id="email" class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+
+            <mp-cell prop="stuName" title="单位地址" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" value = "{{param.firm}}" id="firm" class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+
+            <mp-cell prop="stuName" title="单位联系人电话" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" value = "{{param.contact}}" id="contact" class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+
+            <mp-cell prop="stuName" title="推荐人" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" value = "{{param.rec}}" id="rec" class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+
+            <mp-cell prop="stuName" title="推荐人联系电话" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" value = "{{param.recContact}}"  id="recContact" class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+
+        </mp-cells>
+
+    </view>
+    <!--</view>-->
+    <view class="next" wx:if = "{{flag}}">
+        <text class = "message" bind:tap = "submitForm">提交审核</text>
+    </view>
+</view>

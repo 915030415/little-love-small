@@ -1,0 +1,23 @@
+<!--components/stuMesList/stuMesList.wxml-->
+
+<view class="box">
+    <view class="message">
+         <image src = "{{item.student_photo}}"></image>
+        <view class = "means">
+            <view>
+                <!--小明-->
+                {{item.student_name}}
+            </view>
+            <view>{{item.student_birthday}}岁  |  {{item.student_sex == '1' ? '男' : '女'}}  |  {{item.province}}{{item.city}}</view>
+            <view>
+                <!--单亲家庭，父亲因车祸失去活动能力，士大夫撒地方阿士大夫撒发生的发生-->
+                {{item.school_comment}}
+                {{item.student_text}}
+            </view>
+            <view>资助金额：
+                <!--1000-->
+                {{item.student_money}}
+                元/学期</view>
+        </view>
+    </view>
+</view>

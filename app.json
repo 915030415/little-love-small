@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/allvolunteers/allvolunteers",
+    "pages/find/find",
+    "pages/find/information/information",
+    "pages/mine/mine",
+    "pages/mine/search/search",
+    "pages/mine/stuInfo/stuInfo",
+    "pages/mine/stuInfo/backVisitInfo/backVisitInfo",
+    "pages/mine/stuInfo/thankInfo/thankInfo",
+    "pages/mine/stuInfo/confirmMoney/confirmMoney",
+    "pages/mine/stuInfo/upBackVisit/upBackVisit",
+    "pages/mine/stuInfo/upThank/upThank",
+    "pages/mine/stuInfo/askOut/askOut",
+    "pages/mine/myinfo/myinfo",
+    "pages/mine/dataManagement/dataManagement",
+    "pages/mine/suggest/suggest",
+      "pages/mine/history/history",
+    "pages/mine/notimanager/notimanager",
+    "pages/mine/count/count",
+    "pages/mine/count/weix/weix",
+    "pages/mine/count/zhif/zhif",
+    "pages/mine/notimanager/notifyInfo/notifyInfo",
+    "pages/mine/notimanager/upnotifyInfo/upnotifyInfo",
+    "pages/find/oneupdata/oneupdata",
+      "pages/find/twoupdata/twoupdata",
+      "pages/find/threeupdata/threeupdata",
+      "pages/login/login",
+       "components/submit/submit"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": " #999999",
+    "selectedColor": "#FE4345",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

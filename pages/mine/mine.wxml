@@ -1,0 +1,148 @@
+<!--pages/mine/mine.wxml-->
+<!--<text>pages/mine/mine.wxml</text>-->
+
+<view class = "mine">
+    <!--<view class="header">-->
+    <!--<top-header :close = "true" title = "壹点爱基金"/>-->
+    <!--</view>-->
+    <view class="container bottomClassPx {{loginFlag?'bottomClass':''}}">
+        <view class="show">
+            <view class="show-box">
+                <view class="picture">
+                    <!--<image  wx:if="!loginFlag"  src="http://loveproject.oss-cn-beijing.aliyuncs.com/1564989313/ico_logo.svg"></image>-->
+                    <image
+                            wx:if="{{loginOrOut}}"
+                            src="{{user.photo}}"
+                    ></image>
+                    <!--<img src="../../assets/微信图片_20190723174935.jpg" alt="">-->
+                </view>
+                <view class="message">
+                    <text wx:if="{{loginFlag && role != 3}}">{{user.name}}</text>
+                    <text wx:if="{{loginFlag && role == 3}}">超级管理员</text>
+                    <view class="out1" bindtap= "login" wx:if="{{!loginFlag}}">
+                        <!--退出登录-->
+                        {{loginOrOut}}
+                    </view>
+                    <!--<text>3333</text>-->
+                    <!--<text class = "gl iconfont icon-back-y"></text>-->
+                    <!--<text>获得称号：{{user.title}}</text>-->
+                </view>
+            </view>
+        </view>
+        <bolck wx:if = "{{loginFlag}}">
+            <view class="stuNumber" wx:if="{{role != 3}}">
+                <view bindtap= "help" class = "aid" wx:if = "{{role == 2 || submitRole == 2}}">
+                    <text>{{totalBumHelp}}名</text>
+                    <text>已资助学生</text>
+                </view>
+                <view bindtap= "inquire" class = "investigate" wx:if = "{{role == 1 ||  submitRole==1}}">
+                    <text>{{totalNumInquire}}名</text>
+                    <text>已调查学生</text>
+                </view>
+            </view>
+            <!--<view class = "prize">-->
+            <!--<view class="message" bindtap= "look">-->
+            <!--<view class = "box">-->
+            <!--<text></text>-->
+            <!--<text>我的奖章</text>-->
+            <!--</view>-->
+            <!--<view class = "box">-->
+            <!--<text>15</text>-->
+            <!--<text class = "iconfont icon-back-y"></text>-->
+            <!--</view>-->
+            <!--</view>-->
+            <!--<view class="medal">-->
+            <!--<view class = "medal-box">-->
+            <!--<text><text class = "iconfont icon-aixindashi"></text></text>-->
+            <!--<text>爱心大使</text>-->
+            <!--</view>-->
+            <!--<view class = "medal-box">-->
+            <!--<text><text class = "iconfont icon-aixindashi1"></text></text>-->
+            <!--<text>爱心大使</text>-->
+            <!--</view>-->
+            <!--<view class = "medal-box">-->
+            <!--<text><text class = "iconfont icon-aixindashi"></text></text>-->
+            <!--<text>爱心大使</text>-->
+            <!--</view>-->
+            <!--</view>-->
+            <!--</view>-->
+            <view class="menu {{role == 3 ? 'noMargin' :''}}">
+                <view class="list">
+                    <!--<view class="content">-->
+                    <!--<text></text>-->
+                    <!--<text>我的资料</text>-->
+                    <!--<text></text>-->
+                    <!--</view>-->
+                    <!--<view class="content">-->
+                    <!--<text></text>-->
+                    <!--<text>我的账目</text>-->
+                    <!--<text></text>-->
+                    <!--</view>-->
+                    <!--<view class="content">-->
+                    <!--<text></text>-->
+                    <!--<text>设置收款账户</text>-->
+                    <!--<text></text>-->
+                    <!--</view>-->
+                    <!--<view class="content">-->
+                    <!--<text></text>-->
+                    <!--<text>意见反馈</text>-->
+                    <!--<text></text>-->
+                    <!--</view>-->
+                    <view
+                                 wx:for = "{{menu}}"
+                                 class = "content {{item.className}}"
+                                 wx:key = "*this"
+                                 bindtap = "navigateTo"
+                                 data-router = "{{item.router}}"
+                    >
+                        <text class = "{{item.className}}"></text>
+                        <text>{{item.title}}</text>
+                        <!--<text wx:if="item.router == 'notiManager'" class = "dot">{{notiNumber}}</text>-->
+
+                        <text></text>
+                    </view>
+
+                    <!--<view v-for = "(item,index) in menu" :key="index" @click="goRouter(item)">-->
+                    <!--<text></text>-->
+                    <!--<text>我的资料</text>-->
+                    <!--<text></text>-->
+                    <!--</view>-->
+                    <!--<router-link tag = "view" class = "content" :to="{name : 'MyInfo', params: {id: 111}}">-->
+                    <!--<text></text>-->
+                    <!--<text>我的资料</text>-->
+                    <!--<text></text>-->
+                    <!--</router-link>-->
+                    <!--<router-link tag = "view" class = "content" :to="{name : 'MyInfo'}">-->
+                    <!--<text></text>-->
+                    <!--<text>我的账目</text>-->
+                    <!--<text></text>-->
+                    <!--</router-link>-->
+                    <!--<router-link tag = "view" class = "content" :to="{name : 'MyInfo'}">-->
+                    <!--<text></text>-->
+                    <!--<text>设置收款账户</text>-->
+                    <!--<text></text>-->
+                    <!--</router-link>-->
+                    <!--<router-link tag = "view" class = "content" :to="{name : 'MyInfo'}">-->
+                    <!--<text></text>-->
+                    <!--<text>意见反馈</text>-->
+                    <!--<text></text>-->
+                    <!--</router-link>-->
+                </view>
+            </view>
+        </bolck>
+    </view>
+    <view class="out" bindtap= "login" wx:if="{{loginFlag}}">
+        {{loginOrOut}}
+    </view>
+    <!--<view class="footer">-->
+        <!--<bottom-footer/>-->
+    <!--</view>-->
+    <!--<view class="fillMes" :style = "{display:hiddenFlag ?  'none' : 'block'}">-->
+        <!--<view bindtap= "close">X</view>-->
+        <!--<text>完善个人资料</text>-->
+        <!--<text>完善个人资料可以查看更多信息哦</text>-->
+        <!--<text-->
+                <!--bindtap= "toFillMes"-->
+        <!--&gt;去完善 ></text>-->
+    <!--</view>-->
+</view>

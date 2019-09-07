@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "headerInfo":"../../components/headerInfo/headerInfo",
+    "stuMessage": "../../components/stuMessage/stuMessage",
+    "stuHistory": "../../components/stuHistory/stuHistory",
+    "stuFamily": "../../components/stuFamily/stuFamily",
+    "submit": "../../components/submit/submit"
+  }
+}

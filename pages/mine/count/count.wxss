@@ -1,0 +1,116 @@
+.count .container {
+  min-height: 1334rpx;
+  background-color: #EBEFF2;
+  padding: 0rpx 30rpx 613rpx;
+  overflow: hidden;
+}
+.count .container view.weixBefore, .count .container view.zhifBefore {
+  margin-top: 33rpx;
+  width: 690rpx;
+  height: 328rpx;
+  background: #FFFFFF;
+  border: 1rpx solid #E2E2E2;
+  box-shadow: 0 2rpx 20rpx 0 rgba(0, 0, 0, 0.08);
+  border-radius: 16rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90rpx 0rpx 94rpx 0rpx;
+}
+.count .container view.weixBefore text, .count .container view.zhifBefore text {
+  display: block;
+}
+.count .container view.weixBefore text.weixP, .count .container view.zhifBefore text.weixP {
+  width: 86rpx;
+  height: 68.3rpx;
+  background-size: cover;
+}
+.count .container view.weixBefore text.zhifubP, .count .container view.zhifBefore text.zhifubP {
+  width: 86rpx;
+  height: 68.3rpx;
+  background-size: cover;
+}
+.count .container view.weixBefore text:last-of-type, .count .container view.zhifBefore text:last-of-type {
+  font-size: 34rpx;
+  color: #C5C5C5;
+  letter-spacing: 0;
+  margin-top: 26rpx;
+}
+.count .container view.weixAfter, .count .container view.zhifAfter {
+  position: relative;
+  width: 690rpx;
+  background-image: linear-gradient(180deg, #78D539 0%, #5EB020 99%);
+  border: 1rpx solid #E2E2E2;
+  box-shadow: 0 2rpx 20rpx 0 rgba(0, 0, 0, 0.08);
+  border-radius: 16rpx;
+  margin-top: 20rpx;
+  color: #FFFFFF;
+  padding: 47rpx 0rpx 29rpx 40rpx;
+}
+.count .container view.weixAfter view.left view:first-of-type, .count .container view.zhifAfter view.left view:first-of-type {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.count .container view.weixAfter view.left view:first-of-type text:last-of-type, .count .container view.zhifAfter view.left view:first-of-type text:last-of-type {
+  margin-left: 22rpx;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.count .container view.weixAfter view.left view:first-of-type text.weip, .count .container view.zhifAfter view.left view:first-of-type text.weip {
+  display: inline-block;
+  width: 86rpx;
+  height: 68.3rpx;
+  background-size: cover;
+}
+.count .container view.weixAfter view.left view:first-of-type text.zhip, .count .container view.zhifAfter view.left view:first-of-type text.zhip {
+  display: inline-block;
+  width: 86rpx;
+  height: 68.3rpx;
+  background-size: cover;
+}
+.count .container view.weixAfter view.left view:nth-of-type(2), .count .container view.zhifAfter view.left view:nth-of-type(2) {
+  margin-top: 98rpx;
+}
+.count .container view.weixAfter view.left view:nth-of-type(2) text, .count .container view.zhifAfter view.left view:nth-of-type(2) text {
+  font-size: 28rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.count .container view.weixAfter view.left view:nth-of-type(2) text:last-of-type, .count .container view.zhifAfter view.left view:nth-of-type(2) text:last-of-type {
+  margin-left: 24rpx;
+}
+.count .container view.weixAfter view.left view:nth-of-type(3), .count .container view.zhifAfter view.left view:nth-of-type(3) {
+  margin-top: 10rpx;
+}
+.count .container view.weixAfter view.left view:nth-of-type(3) text, .count .container view.zhifAfter view.left view:nth-of-type(3) text {
+  font-size: 28rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.count .container view.weixAfter view.left view:nth-of-type(3) text:last-of-type, .count .container view.zhifAfter view.left view:nth-of-type(3) text:last-of-type {
+  margin-left: 15rpx;
+}
+.count .container view.weixAfter view.revise, .count .container view.zhifAfter view.revise {
+  padding: 2rpx;
+  position: absolute;
+  width: 190rpx;
+  height: 50rpx;
+  top: 50rpx;
+  right: 30rpx;
+  border: 1rpx solid #FFFFFF;
+  border-radius: 30rpx;
+  color: white;
+}
+.count .container view.weixAfter view.revise text.xiu, .count .container view.zhifAfter view.revise text.xiu {
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  background-size: cover;
+  margin-left: 5rpx;
+}
+.count .container view.zhifAfter {
+  background-image: linear-gradient(180deg, #06B4FD 0%, #00A3E8 100%);
+}

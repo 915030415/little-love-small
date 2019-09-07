@@ -1,0 +1,38 @@
+<!--pages/mine/notimanager/notifyInfo/notifyInfo.wxml-->
+<view class="notifyInfo">
+    <!--<view class="header">-->
+    <!--<top-header :close="true" title="通知详情"/>-->
+    <!--</view>-->
+    <view class="container">
+        <view class="title">
+            <!--通知！请志愿者们加入微信群！-->
+            {{mes.noti_title}}
+        </view>
+        <view class="name">
+          <text>
+            通知人群：{{mes.noti_group == 1 ? '志愿者' :(mes.noti_group ==2 ? '共建者' : '所有人' )}}
+          </text>
+            <text>
+            <!--06-18 20:00-->
+            {{mes.letter_time}}
+</text>
+        </view>
+        <view class="content">
+  <text>
+  <!--为了便于大家方便交流联系，请志愿者们扫码加入微信群，请修改群昵称，格式为：省份市区+分部名称+姓名-->
+  {{mes.noti_text}}
+</text>
+            <text>
+<!--例如：湖南长沙-壹点爱长沙分部-张昊-->
+</text>
+        </view>
+        <view class="photo">
+            <image
+                    wx:for = "{{pthotoArr}}"
+                    wx:key = "*this"
+                    wx:for-item = "item2"
+                    src="{{item2}}"
+            ></image>
+        </view>
+    </view>
+</view>

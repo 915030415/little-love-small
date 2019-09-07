@@ -1,0 +1,46 @@
+.notifyInfo{
+  .container{
+    /*padding-top:128rpx;*/
+    background-color:#ffffff;
+    .title{
+      font-size: 36rpx;
+      color: #000000;
+      letter-spacing: 0.53rpx;
+      line-height: 34rpx;
+      padding:40rpx 28rpx;
+    }
+    .name{
+      padding-left:24rpx;
+      /*display:flex;*/
+      /*flex-direction:column;*/
+      /*justify-content:space-between;*/
+      text{
+        display:block;
+        font-size: 26rpx;
+        color: #999999;
+        line-height: 30rpx;
+      }
+      text:first-of-type{
+        margin-bottom:20rpx;
+      }
+    }
+    .content{
+      margin-top:40rpx;
+      padding:0rpx 28rpx;
+      text{
+        display:block;
+        font-size: 30rpx;
+        color: #2C3239;
+        text-align: justify;
+        line-height: 52rpx;
+      }
+    }
+    .photo{
+      padding:64rpx;
+      image{
+        width:622rpx;
+        hegith:280rpx;
+      }
+    }
+  }
+}

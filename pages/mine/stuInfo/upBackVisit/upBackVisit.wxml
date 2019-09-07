@@ -1,0 +1,68 @@
+<!--pages/mine/stuInfo/upBackVisit/upBackVisit.wxml-->
+<!--pages/find/twoupdata/twoupdata.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <mp-cells>
+            <view class="section">
+            <picker mode="date" id = "date" value="{{date}}" start="1920-09-01" end="2020-09-01" bindchange="bindDateChange">
+                <view class="picker">
+                    <text> <text>回访日期</text><text>*</text></text>
+                    <text>{{date}}</text>
+                </view>
+            </picker>
+            </view>
+
+            <view class = "stuAddr">学习近况<text>*</text></view>
+            <view class="section">
+                <textarea id = "study" prop = "stuAddr"  maxlength = "500" bindinput="formInputChange" auto-height placeholder="请输入" />
+                <text class="word">{{studyLength}}/500</text>
+            </view>
+            <view class = "photo score">
+                <!--<text class = "start">*</text>-->
+                <view class='ui_cell'>
+                    <view class='ui_cell_bd'>成绩单<text>*</text></view>
+                    <view class='ui_cell_ft'>{{uploaderNum1}}/6</view>
+                </view>
+                <view class='ui_uploader_cell'>
+                    <view class='ui_uploader_item' wx:for="{{uploaderList1}}" wx:key="{{index}}">
+                        <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" data-type = "1"  type="clear" size="20" color="red"/>
+                        <image bindtap='showImg' data-type = "1" data-index="{{index}}" src='{{item}}'></image>
+                    </view>
+                    <view class='ui_uploader' bindtap='upload' data-index = "1" wx:if="{{showUpload1}}"></view>
+                </view>
+            </view>
+            <view class = "stuAddr">对学生的评价<text>*</text></view>
+            <view class="section">
+                <textarea id = "comment" prop = "stuAddr"  maxlength = "500" bindinput="formInputChange" auto-height placeholder="请输入" />
+                <text class="word">{{commentLength}}/500</text>
+            </view>
+            <view class = "photo letter">
+                <!--<text class = "start">*</text>-->
+                <view class='ui_cell'>
+                    <view class='ui_cell_bd'>学生照片<text>*</text></view>
+                    <view class='ui_cell_ft'>{{uploaderNum2}}/1</view>
+                </view>
+                <view class='ui_uploader_cell'>
+                    <view class='ui_uploader_item' wx:for="{{uploaderList2}}" wx:key="{{index}}">
+                        <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" data-type = "2"  type="clear" size="20" color="red"/>
+                        <image bindtap='showImg' data-index="{{index}}"   src='{{item}}'></image>
+                    </view>
+                    <view class='ui_uploader' bindtap='upload' data-index = "2" wx:if="{{showUpload2}}"></view>
+                </view>
+            </view>
+            <view class = "stuAddr">家庭近况<text>*</text></view>
+            <view class="section">
+                <textarea id = "family" prop = "stuAddr"  maxlength = "500" bindinput="formInputChange" auto-height placeholder="请输入" />
+                <text class="word">{{familyLength}}/500</text>
+            </view>
+        </mp-cells>
+
+    </view>
+
+    <!--</view>-->
+    <view class="next">
+        <text class = "message" bindtap = "submitForm">上传</text>
+        <!--<button class="message" type="primary" formType="submit">下一步</button>-->
+    </view>
+</view>
+

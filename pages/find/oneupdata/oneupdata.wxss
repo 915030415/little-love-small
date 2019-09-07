@@ -1,0 +1,94 @@
+.page .page__bd {
+  padding-bottom: 228rpx;
+}
+.page .page__bd .section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 97rpx;
+  border-bottom: 1rpx solid #EBEFF2;
+}
+.page .page__bd .section .picker {
+  width: 750rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24rpx;
+}
+.page .page__bd .section .picker text:first-of-type text:last-of-type {
+  color: red;
+}
+.page .page__bd .section textarea {
+  padding: 24rpx;
+}
+.page .page__bd .section .word {
+  position: absolute;
+  font-size: 30rpx;
+  color: #CECECE;
+  letter-spacing: 0;
+  text-align: center;
+  bottom: 10rpx;
+  right: 24rpx;
+}
+.page .page__bd .weui-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 97rpx;
+  border-bottom: 1rpx solid #EBEFF2;
+  padding: 0 24rpx;
+}
+.page .page__bd .weui-cell .weui-cell__bd {
+  position: relative;
+}
+.page .page__bd .weui-cell .weui-cell__bd text.start {
+  color: red;
+  float: left;
+}
+.page .page__bd .weui-input {
+  text-align: right;
+}
+.page .page__bd .mes {
+  background-color: #EBEFF2;
+  height: 82rpx;
+  line-height: 82rpx;
+  padding-left: 24rpx;
+  font-size: 30rpx;
+  color: #000000;
+}
+.page .page__bd .stuAddr {
+  padding: 0 24rpx;
+}
+.page .page__bd .stuAddr text {
+  color: red;
+}
+.page .page__bd .photo .ui_cell {
+  border-bottom: none;
+}
+.page .page__bd .photo .ui_cell .ui_cell_bd text {
+  color: red;
+}
+.page .next {
+  background-color: #ffffff;
+  width: 100%;
+  height: 128rpx;
+  line-height: 128rpx;
+  text-align: center;
+}
+.page .next .message {
+  display: inline-block;
+  width: 630rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-image: linear-gradient(-135deg, #FF4343 0%, #F04E69 100%);
+  box-shadow: 0 2rpx 20rpx 0 rgba(245, 57, 7, 0.2);
+  border-radius: 45rpx;
+  font-size: 34rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.page .next .progress {
+  box-shadow: none;
+  background-image: none;
+  background-color: #ccc;
+}

@@ -1,0 +1,34 @@
+.allvolunteers .container {
+  /*padding-top:128rpx;*/
+  background-color: #ffffff;
+}
+.allvolunteers .container .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 0rpx 24rpx;
+}
+.allvolunteers .container .content .item {
+  /*flex:1;*/
+  /*width:180rpx;*/
+  width: 150rpx;
+  height: 290rpx;
+  margin-left: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.allvolunteers .container .content .item image {
+  /*width:180rpx;*/
+  width: 100%;
+  /*width:157rpx;*/
+  height: 170rpx;
+}
+.allvolunteers .container .content .item .name {
+  font-size: 28rpx;
+  color: #000000;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+}

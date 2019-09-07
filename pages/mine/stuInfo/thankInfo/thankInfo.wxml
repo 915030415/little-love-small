@@ -1,0 +1,38 @@
+<!--pages/mine/stuInfo/thankInfo/thankInfo.wxml-->
+<view class="thankInfo">
+    <!--<view class="header">-->
+    <!--<top-header :close="true" title="感谢信详情"/>-->
+    <!--</view>-->
+    <view class="container">
+        <view class="mes">
+            <view class="stu">
+                <view class="box">
+                    <view>
+                        <image src="{{thankMes.photo}}"></image>
+                    </view>
+                    <view>
+                        <text>收信人：{{thankMes.receiver}}</text>
+                        <text>学生地址：{{thankMes.province}}{{thankMes.city}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="title">
+            <text>
+              <!--感谢信标题-->
+              {{thankMes.title || '感谢信标题'}}
+            </text>
+                <text>
+              <!--06-18 20:00-->
+              {{thankMes.time || '06-18 20:00'}}
+            </text>
+            </view>
+            <view class="content">
+                <image
+                        wx:for = "{{content}}"
+                        wx:key = "*this"
+                        src="{{item}}"
+                ></image>
+            </view>
+        </view>
+    </view>
+</view>

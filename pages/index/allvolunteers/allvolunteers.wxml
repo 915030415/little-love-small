@@ -1,0 +1,20 @@
+<!--pages/index/allvolunteers/allvolunteers.wxml-->
+<!--<text>pages/index/allvolunteers/allvolunteers.wxml</text>-->
+
+
+<view class="allvolunteers">
+    <!--<view class="header">-->
+    <!--<top-header :close="true" title="志愿者风采"/>-->
+    <!--</view>-->
+    <view class="container">
+        <view class="content">
+            <view class="item"
+                 wx:for = "{{volunteer}}"
+                 wx:key = "{{index}}"
+            >
+               <image src="{{item.photo}}"></image>
+                <text class = "name">{{item.name}}</text>
+            </view>
+        </view>
+    </view>
+</view>

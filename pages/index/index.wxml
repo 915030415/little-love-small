@@ -1,0 +1,137 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="container">
+    <view class="imgBox">
+      <swiper indicator-dots="{{indicatorDots}}" class="topSwiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{content}}" wx:key="item.img">
+          <swiper-item>
+            <image src="{{item.img}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="captions">
+        <text>我们已经帮助{{total.studentCount}}名孩子</text>
+        <text>资助并到账{{total.totalMoney}}元</text>
+      </view>
+    </view>
+    <view class="situation">
+      <view class="year">
+        {{nowYear}}年平台资助情况
+      </view>
+      <view class="sum">
+        <view class="child">
+          <text class="child-box">资助孩子</text>
+          <view class="number">
+          <text wx:for = "{{getStudentCount}}" wx:key = "*index">{{item}}</text>
+
+            <!--<text>1</text>-->
+            <!--<text>2</text>-->
+            <!--<text>3</text>-->
+            <!--<text>4</text>-->
+          </view>
+          <text class="peson">人</text>
+        </view>
+        <view class="money">
+          <text class="child-box">总资助金额</text>
+          <view class="number">
+
+            <text wx:for = "{{getTotalMoney}}" wx:key = "*index">{{item}}</text>
+          </view>
+          <text class="peson">元</text>
+        </view>
+      </view>
+    </view>
+    <view class="province">
+      <view class="statistics">
+        省统计
+      </view>
+      <view class="statistics-box">
+        <view class="sum">
+          <text class="word">1</text>
+          <text class="province-name">{{Totalprovince.province}}</text>
+          <text class="total">累计捐款总额:{{Totalprovince.money}}</text>
+        </view>
+        <view class="content">
+          <view class="box line">
+            <text class="number">{{Totalprovince.volunteer}}</text>
+            <text class="name">志愿者</text>
+          </view>
+          <view class="box line">
+            <text class="number">{{Totalprovince.donator}}</text>
+            <text class="name">共建者</text>
+          </view>
+          <view class="box">
+            <text class="number">{{Totalprovince.student}}</text>
+            <text class="name">资助孩子</text>
+          </view>
+        </view>
+      </view>
+    </view>
+      <view class="forms">
+          <view class = "year-aid">
+              {{nowYear}}年资助金额报表
+          </view>
+          <view class="external">
+              <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+          </view>
+      </view>
+    <view class="show">
+      <view class="message">
+        <text class="volunteers">志愿者风采</text>
+        <text class="more" bind:tap = "more" data-index = "111">更多</text>
+      </view>
+      <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+        <view class="box">
+          <view class="item" wx:for="{{volunteer}}" wx:key="item.img">
+            <image src="{{item.photo}}"></image>
+            <text class="name">
+                 <!--易晓薇-->
+                 {{item.name}}
+               </text>
+            <text class="help">
+                帮助<text class = "number">{{item.helpStudent}}</text>人
+            </text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="about">
+      <view class="about-box">
+        关于壹点爱
+      </view>
+      <view class="describe">
+        <view class="box">
+          <text decode="{{true}}" space="{{true}}">
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;中山市壹点爱助学服务中心于2010年由诗人、超人节能厨卫电器总经理罗子健先生发起，2016年7月经民政局登记成立为以公益助学为主要服务项目的民办非企业单位。
+                    </text>
+          <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自成立以来，壹点爱得到了很多爱心人士的支持，现已相继在广东、湖南、四川、广西等地成立分部，助学达3000余人次，筹建公益图书室7所，爱心食堂2所，并筹建了爱心仓库4所以探索分享公益模式。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<!--"tabBar": {-->
+<!--"selectedColor": "#000",-->
+<!--"list": [-->
+<!--{-->
+<!--"pagePath": "pages/index/index",-->
+<!--"text": "主页",-->
+<!--"iconPath": "./pages/assets/image/footer/shouye_icon.svg",-->
+<!--"selectedIconPath": "./pages/assets/image/footer/shouyedianji_icon.svg"-->
+<!--},-->
+<!--{-->
+<!--"pagePath": "pages/find/find",-->
+<!--"text": "发现",-->
+<!--"iconPath": "./pages/assets/image/footer/ico_faxian.svg",-->
+<!--"selectedIconPath": "./pages/assets/image/footer/faxiandianji_icon.svg"-->
+<!--},-->
+<!--{-->
+<!--"pagePath": "pages/mine/mine",-->
+<!--"text": "我的",-->
+<!--"iconPath": "./pages/assets/image/footer/ico_wode.svg",-->
+<!--"selectedIconPath": "./pages/assets/image/footer/ico_wode_sz.svg"-->
+<!--}-->
+<!--]-->
+<!--},-->

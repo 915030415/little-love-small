@@ -1,0 +1,96 @@
+.notiManager{
+  width: 100%;
+  height:1333rpx;
+  background: #F2F2F2;
+  .mess{
+    margin-top:300rpx;
+    width:100%;
+    text-align: center;
+    color:#ccc;
+  }
+  .container{
+    //padding-top:128rpx;
+    background: #F2F2F2;
+    .box {
+      background: #FFFFFF;
+      height:160rpx;
+      /*border: 1rpx solid red;*/
+      padding:40rpx 0rpx 40rpx 24rpx;
+      width: 750rpx;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      view:first-of-type {
+        text:first-of-type{
+          display: inline-block;
+          width: 80rpx;
+          height:80rpx;
+          /*background: #FFAD28;*/
+          border-radius:50%;
+          //background-image: url("../../assets/image/mine/laba_icon.svg");
+          background-size: cover;
+        }
+      }
+
+      view:last-of-type {
+        padding-right:30rpx;
+        margin-left:20rpx;
+        width: 670rpx;
+        height:160rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        border-bottom:1rpx solid #ccc;
+        text:first-of-type{
+          display:flex;
+          justify-content: space-between;
+          text:first-of-type{
+            font-size: 30rpx;
+            color: #000000;
+            text-align: left;
+            line-height: 36rpx;
+          }
+          text:last-of-type{
+            font-size: 24rpx;
+            color: #B2B2B2;
+            line-height: 28rpx;
+          }
+        }
+        text:last-of-type{
+          margin-top:16rpx;
+          font-size: 26rpx;
+          color: #999999;
+          line-height: 28rpx;
+          overflow:hidden;
+          white-space:nowrap;
+          text-overflow:ellipsis;
+        }
+      }
+    }
+    .box:last-of-type{
+      view:last-of-type{
+        border:none;
+      }
+    }
+  }
+  .footer{
+    //position:fixed;
+    width:100%;
+    //top:0rpx;
+    height:128rpx;
+    background: #FFFFFF;
+    box-shadow: 0 2rpx 20rpx 0 rgba(0,0,0,0.05);
+    border-radius: 2rpx;
+    line-height: 128rpx;
+    text-align: center;
+    text{
+      display: inline-block;
+      width:640rpx;
+      height:80rpx;
+      line-height: 80rpx;
+      border: 1rpx solid #CECECE;
+      box-shadow: 0 2rpx 20rpx 0 rgba(206,206,206,0.20);
+      border-radius: 44.5rpx;
+    }
+  }
+}

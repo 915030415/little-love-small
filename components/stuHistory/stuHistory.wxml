@@ -1,0 +1,33 @@
+<view class="stuHistory">
+    <view class="box">
+        <stuTitle content = "受资助历史记录"></stuTitle>
+        <view class="mess"
+             wx:if="{{!flagApply}}"
+        >
+            暂无数据
+        </view>
+        <view class="content">
+            <view class="message"
+                 wx:for = "{{moneyHistory}}"
+                 wx:key = "*this"
+            >
+                <view class = "dot"><text></text></view>
+                <view class="describe">
+                    <view>2012-2014</view>
+                    <view>
+                        <text>停止捐助原因：</text>
+                        <text>{{item.history_reason}}</text>
+                    </view>
+                    <view>
+                        <text>助学金：</text>
+                        <text>{{stuInfo.student_money || '0'}}元/学期</text>
+                    </view>
+                    <view>
+                        <text>前捐助人备注：</text>
+                        <view>{{item.history_reason}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

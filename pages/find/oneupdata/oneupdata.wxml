@@ -1,0 +1,99 @@
+
+<view class="page">
+    <view class="page__bd">
+            <mp-cells>
+                <view class="section">
+                    <picker mode="date" id = "date1" value="{{date1}}" start="1920-09-01" end="2020-09-01" bindchange="bindPickerChange">
+                        <view class="picker">
+                           <text> <text>探望日期</text><text>*</text></text>
+                            <text>{{date1}}</text>
+                        </view>
+                    </picker>
+                </view>
+                <mp-cell prop="money" title="资助金额/学期" ext-class="">
+                    <text class = "start">*</text>
+                     <input bindinput="formInputChange" id="money"  class="weui-input" placeholder="请输入"/>
+                    <!--<view slot="icon">*</view>-->
+                    <!--title="资助金额/学期"-->
+                </mp-cell>
+                <view class = "mes">
+                    学生资料
+                </view>
+                <mp-cell prop="stuName" title="资助儿童姓名" ext-class="">
+                    <text class = "start">*</text>
+                    <input bindinput="formInputChange" id="stuName" class="weui-input" placeholder="请输入"/>
+                    <!--<view slot="icon">*</view>-->
+                    <!--title="资助金额/学期"-->
+                </mp-cell>
+                <mp-cell prop="idcard" title="身份证号码" ext-class="">
+                    <text class = "start">*</text>
+                    <input bindinput="formInputChange" bindblur = "getMesSexAndage" id="idcard" class="weui-input" placeholder="请输入"/>
+                    <!--<view slot="icon">*</view>-->
+                    <!--title="资助金额/学期"-->
+                </mp-cell>
+               <view class = "section">
+                   <picker mode="region" id = "region" bindchange="bindPickerChange" value="{{region}}">
+                       <view class="picker">
+                           <text><text>学生住址</text><text>*</text></text>
+                           <text>{{region[0]}}，{{region[1]}}，{{region[2]}}</text>
+                       </view>
+                   </picker>
+               </view>
+                <view class = "stuAddr">学生住址详细 <text>*</text></view>
+                <view class="section">
+                    <textarea id = "stuAddr" prop = "stuAddr"  maxlength = "100" bindinput="formInputChange" auto-height placeholder="请输入" />
+                    <text class="word">{{stuAddrLength}}/100</text>
+                </view>
+                <view class="section">
+                    <picker mode="date" id = "date" value="{{date}}" start="1920-09-01" end="2020-09-01" bindchange="bindPickerChange">
+                        <view class="picker">
+                            <text> <text>生日</text><text>*</text></text>
+                            <text>{{date}}</text>
+                        </view>
+                    </picker>
+                </view>
+                <view class="section">
+                    <picker bindchange="bindPickerChange" id = "sex" value="{{index}}" range="{{array}}">
+                        <view class="picker">
+                            <text> <text>性别</text><text>*</text></text>
+                            <text>{{array[index]}}</text>
+                        </view>
+                    </picker>
+                </view>
+                <mp-cell prop="schoolName" title="学校名称" ext-class="">
+                    <text class = "start">*</text>
+                    <input bindinput="formInputChange" id = "schoolName" class="weui-input" placeholder="请输入"/>
+                    <!--<view slot="icon">*</view>-->
+                    <!--title="资助金额/学期"-->
+                </mp-cell>
+            </mp-cells>
+            <view class = "stuAddr">是否正在受其他资助 <text>*</text></view>
+            <view class="section">
+                <textarea prop = "stuAddrHelp" id = "stuHelp"  maxlength = "500" bindinput="formInputChange" auto-height placeholder="请输入" />
+                <text class="word">{{stuHelpLength}}/500</text>
+            </view>
+           <view class = "photo">
+               <!--<text class = "start">*</text>-->
+               <view class='ui_cell'>
+                   <view class='ui_cell_bd'>学生个人照片<text>*</text></view>
+                   <view class='ui_cell_ft'>{{uploaderNum}}/1</view>
+               </view>
+               <view class='ui_uploader_cell'>
+                   <view class='ui_uploader_item' wx:for="{{uploaderList}}" wx:key="{{index}}">
+                       <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" type="clear" size="20" color="red"/>
+                       <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+                   </view>
+                   <view class='ui_uploader' bindtap='upload' wx:if="{{showUpload}}"></view>
+               </view>
+
+           </view>
+        <!--<view class="weui-btn-area">-->
+            <!--<button class="weui-btn" type="primary" bindtap="submitForm">确定</button>-->
+    </view>
+    <!--</view>-->
+    <view class="next">
+        <text class = "message" bind:tap = "submitForm">下一步</text>
+        <!--<button class="message" type="primary" formType="submit">下一步</button>-->
+    </view>
+</view>
+

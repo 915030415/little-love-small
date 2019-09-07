@@ -1,0 +1,24 @@
+<!--pages/find/information/information.wxml-->
+
+<view class = "information">
+    <view class="wrap" style = "display:{{hiddenFlag?  'none' : 'block'}}"></view>
+    <headerInfo stuInfo = "{{stuInfo}}"></headerInfo>
+
+    <stuMessage stuInfo = "{{stuInfo}}"></stuMessage>
+
+    <stuHistory moneyHistory = "{{moneyHistory}}"></stuHistory>
+
+    <stuFamily familyInfo = "{{familyInfo}}"></stuFamily>
+     <view  class="footer" wx:if="{{flagSubmit}}">
+        <submit title = "{{askMes}}" class = "footerBox" bindincrement = "submit"> </submit>
+     </view>
+    <view class="success" style = "display:{{hiddenFlag ?  'none' : 'block'}}">
+        <p>申请成功，请等待审核</p>
+        <p>我们会通过系统通知将审核结果告知您</p>
+        <p>{{second}}s后自动关闭...</p>
+    </view>
+    <view class="success" style = "display:{{hiddenFlag1 ?  'none' : 'block'}}">
+        <p>该学生资助申请中</p>
+        <text bindtap = "backFind">返回发现页面</text>
+    </view>
+</view>

@@ -1,0 +1,67 @@
+.suggest .container {
+  width: 750rpx;
+  padding-top: 128rpx;
+  background-color: #ffffff;
+}
+.suggest .container view:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80rpx 0rpx 40rpx;
+}
+.suggest .container view:first-of-type text:first-of-type {
+  display: inline-block;
+  width: 240rpx;
+  height: 240rpx;
+  line-height: 240rpx;
+  /*border:1rpx solid red;*/
+  border-radius: 50%;
+  background-size: cover;
+}
+.suggest .container view:first-of-type text:last-of-type {
+  margin-top: 40rpx;
+  display: inline-block;
+  height: 196rpx;
+  line-height: 196rpx;
+  font-size: 28rpx;
+  color: #666666;
+  text-align: center;
+}
+.suggest .container view:last-of-type {
+  margin: 0rpx 60rpx;
+  width: 630rpx;
+  height: 250rpx;
+  background: rgba(254, 67, 69, 0.08);
+  border-radius: 8rpx;
+  padding: 40rpx 38rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.suggest .container view:last-of-type text {
+  margin-top: 10rpx;
+  height: 40rpx;
+  display: block;
+}
+.suggest .container view:last-of-type text text {
+  display: inline-block;
+}
+.suggest .container view:last-of-type text text:nth-of-type(old) {
+  font-size: 28rpx;
+  color: #000000;
+  text-align: center;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.suggest .container view:last-of-type text text:nth-of-type(even) {
+  display: inline-block;
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #ccc;
+  text-align: center;
+  line-height: 40rpx;
+}
+.suggest .container view:last-of-type text:first-of-type {
+  margin-bottom: 20rpx;
+}

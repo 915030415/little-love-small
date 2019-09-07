@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a515ee45-5663-4cbe-a48d-575c686c7c49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/ajaxList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/apiList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/headerInfo/headerInfo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/cell/cell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/cell/cell.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/cell/cell.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/cell/cell.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/cells/cells.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/cells/cells.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/cells/cells.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/searchbar/searchbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/searchbar/searchbar.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/searchbar/searchbar.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/searchbar/searchbar.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/static/icon/s-arrow-back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/static/icon/s-arrow-back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/weui-wxss/dist/style/weui.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/wget-1.14-18.el7.x86_64/wget-1.14-18.el7.x86_64.cpio.lzma" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/searchbar/weui-miniprogram/wget-1.14-18.el7.x86_64/wget-1.14-18.el7.x86_64.cpio/wget-1.14-18.el7.x86_64.cpio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/stuFamily/stuFamily.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/stuHistory/stuHistory.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/stuMesList/stuMesList.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/stuMessage/stuMessage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/stuTitle/stuTitle.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/submit/submit.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/find/find.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/find/information/information.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/find/oneupdata/oneupdata.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index/allvolunteers/allvolunteers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login/login.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/count/count.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/count/weix/weix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/dataManagement/dataManagement.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/history/history.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/mine.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/myinfo/myinfo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/notimanager/notifyInfo/notifyInfo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/notimanager/notimanager.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/notimanager/upnotifyInfo/upnotifyInfo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/search/search.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/stuInfo/askOut/askOut.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/stuInfo/backVisitInfo/backVisitInfo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/stuInfo/confirmMoney/confirmMoney.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/stuInfo/stuInfo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/stuInfo/thankInfo/thankInfo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/stuInfo/upBackVisit/upBackVisit.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/mine/suggest/suggest.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/check.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/time.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/mine/dataManagement/dataManagement.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/mine/dataManagement/dataManagement.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1845">
+              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/find/oneupdata/oneupdata.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="791">
+              <caret line="347" column="20" selection-start-line="347" selection-start-column="20" selection-end-line="347" selection-end-column="66" />
+              <folding>
+                <element signature="e#37#89#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>infoSlide</find>
+      <find>rrpx</find>
+      <find>v-for</find>
+      <find>@click</find>
+      <find>family_id_number</find>
+      <find>mess</find>
+      <find>getStuMoney</find>
+      <find>getTime</find>
+      <find>v-if</find>
+      <find>img</find>
+      <find>flagVisi</find>
+      <find>stuVisit</find>
+      <find>score</find>
+      <find>getTimeYear</find>
+      <find>flagApply1</find>
+      <find>bindPickerChange</find>
+      <find>date</find>
+      <find>formInputChange</find>
+      <find>bindDateChange</find>
+      <find>flag7</find>
+      <find>falgApply</find>
+      <find>flag1</find>
+      <find>flag</find>
+      <find>flagH</find>
+      <find>this.data.stuMes</find>
+      <find>setDateAll</find>
+      <find>span</find>
+      <find>px</find>
+      <find>post</find>
+      <find>birthday</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>px</replace>
+      <replace>iamge</replace>
+      <replace>this.data.stuMes</replace>
+      <replace>this.data.nextFlag</replace>
+      <replace>wx.showToast</replace>
+      <replace>,title</replace>
+      <replace>this.setDateALl('nextFlag',false)</replace>
+      <replace>setDateAll</replace>
+      <replace>homeMes</replace>
+      <replace>http.promise_get</replace>
+      <replace>http.promise_post</replace>
+      <replace>wx.getStorageSync</replace>
+      <replace>this.data.param</replace>
+      <replace>this.message</replace>
+      <replace>div</replace>
+      <replace>wx:key</replace>
+      <replace>this.data.indexStatus</replace>
+      <replace>this.data.studentName</replace>
+      <replace>wx.setStorageSync</replace>
+      <replace>this.data.stuInfo</replace>
+      <replace>$ajaxList</replace>
+      <replace>wx:for</replace>
+      <replace>bindtap</replace>
+      <replace>wx:if</replace>
+      <replace>image</replace>
+      <replace>this.data.mes</replace>
+      <replace>text</replace>
+      <replace>rpx</replace>
+      <replace>view</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pages/mine/suggest/suggest.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/suggest/suggest.scss" />
+        <option value="$PROJECT_DIR$/pages/mine/history/history.scss" />
+        <option value="$PROJECT_DIR$/pages/mine/history/history.js" />
+        <option value="$PROJECT_DIR$/pages/mine/history/history.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/count/count.scss" />
+        <option value="$PROJECT_DIR$/pages/mine/count/count.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/count/weix/weix.json" />
+        <option value="$PROJECT_DIR$/pages/mine/count/weix/weix.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/count/weix/weix.scss" />
+        <option value="$PROJECT_DIR$/pages/mine/count/count.js" />
+        <option value="$PROJECT_DIR$/pages/mine/count/weix/weix.js" />
+        <option value="$PROJECT_DIR$/pages/mine/search/search.scss" />
+        <option value="$PROJECT_DIR$/pages/find/find.js" />
+        <option value="$PROJECT_DIR$/pages/find/information/information.json" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/stuInfo.json" />
+        <option value="$PROJECT_DIR$/pages/find/information/information.wxml" />
+        <option value="$PROJECT_DIR$/components/stuFamily/stuFamily.scss" />
+        <option value="$PROJECT_DIR$/components/stuFamily/stuFamily.js" />
+        <option value="$PROJECT_DIR$/components/stuFamily/stuFamily.wxml" />
+        <option value="$PROJECT_DIR$/api/apiList.js" />
+        <option value="$PROJECT_DIR$/api/ss.js" />
+        <option value="$PROJECT_DIR$/utils/time.js" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/backVisitInfo/backVisitInfo.scss" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/backVisitInfo/backVisitInfo.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/backVisitInfo/backVisitInfo.js" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/thankInfo/thankInfo.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/thankInfo/thankInfo.js" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/confirmMoney/confirmMoney.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/upBackVisit/upBackVisit.json" />
+        <option value="$PROJECT_DIR$/pages/find/threeupdata/threeupdata.wxml" />
+        <option value="$PROJECT_DIR$/app.scss" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/upBackVisit/upBackVisit.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/confirmMoney/confirmMoney.js" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/upThank/upThank.js" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/upThank/upThank.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/stuInfo.scss" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/thankInfo/thankInfo.scss" />
+        <option value="$PROJECT_DIR$/pages/mine/search/search.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/search/search.js" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/stuInfo.js" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/upBackVisit/upBackVisit.js" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/askOut/askOut.js" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/stuInfo.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/stuInfo/askOut/askOut.wxml" />
+        <option value="$PROJECT_DIR$/pages/find/oneupdata/oneupdata.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/mine.js" />
+        <option value="$PROJECT_DIR$/pages/mine/dataManagement/dataManagement.wxml" />
+        <option value="$PROJECT_DIR$/pages/mine/dataManagement/dataManagement.scss" />
+        <option value="$PROJECT_DIR$/pages/mine/dataManagement/dataManagement.js" />
+        <option value="$PROJECT_DIR$/pages/find/oneupdata/oneupdata.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1001" />
+    <option name="height" value="779" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="little-love-small" type="b2602c69:ProjectViewProjectNode" />
+              <item name="little-love-small" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="little-love-small" type="b2602c69:ProjectViewProjectNode" />
+              <item name="little-love-small" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="little-love-small" type="b2602c69:ProjectViewProjectNode" />
+              <item name="little-love-small" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="little-love-small" type="b2602c69:ProjectViewProjectNode" />
+              <item name="little-love-small" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="find" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="little-love-small" type="b2602c69:ProjectViewProjectNode" />
+              <item name="little-love-small" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="find" type="462c0819:PsiDirectoryNode" />
+              <item name="oneupdata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="little-love-small" type="b2602c69:ProjectViewProjectNode" />
+              <item name="little-love-small" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="find" type="462c0819:PsiDirectoryNode" />
+              <item name="threeupdata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="little-love-small" type="b2602c69:ProjectViewProjectNode" />
+              <item name="little-love-small" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="little-love-small" type="b2602c69:ProjectViewProjectNode" />
+              <item name="little-love-small" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+              <item name="dataManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="little-love-small" type="b2602c69:ProjectViewProjectNode" />
+              <item name="little-love-small" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="little-love-small" type="b2602c69:ProjectViewProjectNode" />
+              <item name="little-love-small" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.0" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/sass.cmd" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\vue\little-love-small\api" />
+      <recent name="D:\vue\little-love-small\utils" />
+      <recent name="D:\vue\little-love-small\pages\find\upData\oneUpData" />
+      <recent name="D:\vue\little-love-small\components" />
+      <recent name="D:\vue\little-love-small" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\vue\little-love-small\components" />
+      <recent name="D:\vue\little-love-small\pages\find" />
+      <recent name="D:\vue\little-love-small\components\searchbar" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.ss.js">
+    <configuration name="ajaxList.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/api/ajaxList.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="allvolunteers.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/pages/index/allvolunteers/allvolunteers.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/pages/find/information/index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="ss.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/api/ss.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.ss.js" />
+        <item itemvalue="Node.js.ajaxList.js" />
+        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="Node.js.allvolunteers.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a515ee45-5663-4cbe-a48d-575c686c7c49" name="Default Changelist" comment="" />
+      <created>1566888049425</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566888049425</updated>
+      <workItem from="1566888051160" duration="69000" />
+      <workItem from="1566888138892" duration="12129000" />
+      <workItem from="1566955645348" duration="3099000" />
+      <workItem from="1566960246339" duration="19149000" />
+      <workItem from="1567043899239" duration="4243000" />
+      <workItem from="1567048190464" duration="20500000" />
+      <workItem from="1567128393984" duration="25582000" />
+      <workItem from="1567387986671" duration="26060000" />
+      <workItem from="1567474050718" duration="29424000" />
+      <workItem from="1567560232383" duration="28239000" />
+      <workItem from="1567647129613" duration="23672000" />
+      <workItem from="1567733000986" duration="27426000" />
+      <workItem from="1567784018101" duration="609000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="220201000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24973656" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32321042" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/pages/index/index.js</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/stuInfo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/myinfo/myinfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/find/information/information.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="100" column="6" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="100" selection-end-column="6" />
+          <folding>
+            <element signature="e#525#1961#0" />
+            <element signature="e#1980#2462#0" />
+            <element signature="e#2479#2947#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/find/information/information.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#view#0;n#view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/notimanager/notimanager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/stuFamily/stuFamily.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding>
+            <element signature="n#view#0;n#block#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#1;n#block#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#2;n#block#0;n#view#0;n#view#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/stuFamily/stuFamily.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="105" column="1" lean-forward="true" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
+          <folding>
+            <element signature="e#11#1863#0" />
+            <element signature="e#1871#1954#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/stuFamily/stuFamily.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/ss.js" />
+    <entry file="file://$PROJECT_DIR$/api/apiList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/ajaxList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/backVisitInfo/backVisitInfo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="151" column="1" selection-start-line="151" selection-start-column="1" selection-end-line="151" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#2789#0" />
+            <element signature="e#2606#3328#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/thankInfo/thankInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/thankInfo/thankInfo.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/time.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/confirmMoney/confirmMoney.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/askOut/askOut.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/upBackVisit/upBackVisit.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/confirmMoney/confirmMoney.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/find/twoupdata/twoupdata.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="67" column="15" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="67" selection-end-column="15" />
+          <folding>
+            <element signature="n#view#8;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/find/twoupdata/twoupdata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="5" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/find/threeupdata/threeupdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="273" column="38" selection-start-line="273" selection-start-column="27" selection-end-line="273" selection-end-column="38" />
+          <folding>
+            <element signature="e#977#3504#0" />
+            <element signature="e#3522#4839#0" />
+            <element signature="e#4863#5356#0" />
+            <element signature="e#5382#5447#0" />
+            <element signature="e#5451#5481#0" />
+            <element signature="e#5619#5694#0" />
+            <element signature="e#5717#6860#0" />
+            <element signature="e#6901#7936#0" />
+            <element signature="e#7959#8218#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="401" column="16" selection-start-line="401" selection-start-column="16" selection-end-line="401" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/find/threeupdata/threeupdata.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="60" column="67" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="67" />
+          <folding>
+            <element signature="n#view#0;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#mp-cell#0;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#mp-cell#1;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#mp-cell#2;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#mp-cell#3;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#1;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#3;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#5;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/find/oneupdata/oneupdata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/upBackVisit/upBackVisit.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/find/twoupdata/twoupdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="e#37#77#0" expanded="true" />
+            <element signature="e#791#3261#0" />
+            <element signature="e#3279#4709#0" />
+            <element signature="e#4733#5232#0" />
+            <element signature="e#5258#5323#0" />
+            <element signature="e#5343#5452#0" />
+            <element signature="e#5477#5551#0" />
+            <element signature="e#5574#6560#0" />
+            <element signature="e#6601#7168#0" />
+            <element signature="e#7191#7349#0" />
+            <element signature="e#7372#8362#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/backVisitInfo/backVisitInfo.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding>
+            <element signature="n#view#0;n#template#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#1;n#template#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#0;n#view#0;n#view#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/confirmMoney/confirmMoney.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/confirmMoney/confirmMoney.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="46" column="10" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="46" selection-end-column="10" />
+          <folding>
+            <element signature="e#51#100#0" expanded="true" />
+            <element signature="e#380#467#0" />
+            <element signature="e#481#640#0" />
+            <element signature="e#1084#1149#0" />
+            <element signature="e#1187#1619#0" />
+            <element signature="e#1642#1800#0" />
+            <element signature="e#1823#2589#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/stuInfo.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#20#118#0" />
+            <element signature="e#150#188#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/upBackVisit/upBackVisit.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="n#view#5;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#8;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/upThank/upThank.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <element signature="n#view#0;n#view#0;n#view#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/stuInfo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="396" column="29" selection-start-line="396" selection-start-column="29" selection-end-line="396" selection-end-column="29" />
+          <folding>
+            <element signature="e#9#2166#0" />
+            <element signature="e#2176#2659#0" />
+            <element signature="e#2673#3341#0" />
+            <element signature="e#3355#4077#0" />
+            <element signature="e#4086#4556#0" />
+            <element signature="e#4569#5898#0" />
+            <element signature="e#5911#7099#0" />
+            <element signature="e#7587#7807#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/thankInfo/thankInfo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+          <folding>
+            <element signature="e#146#1451#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/upThank/upThank.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2132">
+          <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+          <folding>
+            <element signature="e#350#844#0" />
+            <element signature="e#627#1100#0" />
+            <element signature="e#1381#1458#0" />
+            <element signature="e#1053#1065#0" />
+            <element signature="e#1496#1930#0" />
+            <element signature="e#1544#1702#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/stuInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="389" column="10" selection-start-line="389" selection-start-column="10" selection-end-line="389" selection-end-column="10" />
+          <folding>
+            <element signature="e#33#79#0" expanded="true" />
+            <element signature="e#3283#4366#0" />
+            <element signature="e#4396#4906#0" />
+            <element signature="e#4929#5089#0" />
+            <element signature="e#5120#5996#0" />
+            <element signature="e#6027#6152#0" />
+            <element signature="e#6182#6793#0" />
+            <element signature="e#6973#7410#0" />
+            <element signature="e#7443#7448#0" />
+            <element signature="e#7769#8207#0" />
+            <element signature="e#8221#8687#0" />
+            <element signature="e#8285#8682#0" />
+            <element signature="e#8711#8721#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/backVisitInfo/backVisitInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-656">
+          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+          <folding>
+            <element signature="e#53#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/upBackVisit/upBackVisit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#2250#2744#0" />
+            <element signature="e#2946#3989#0" />
+            <element signature="e#4012#4271#0" />
+            <element signature="e#4294#6190#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/askOut/askOut.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="e#39#83#0" expanded="true" />
+            <element signature="e#471#558#0" />
+            <element signature="e#337#479#0" />
+            <element signature="e#333#3218#0" />
+            <element signature="e#305#383#0" />
+            <element signature="e#406#1400#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/dataManagement/dataManagement.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2009">
+          <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/find/oneupdata/oneupdata.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding>
+            <element signature="n#view#0;n#!!top" />
+            <element signature="n#mp-cell#0;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#1;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#mp-cell#1;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#picker#0;n#view#2;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#6;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#mp-cell#3;n#mp-cells#0;n#view#0;n#view#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/search/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="45" />
+          <folding>
+            <element signature="e#135#314#0" />
+            <element signature="e#1247#1254#0" />
+            <element signature="e#1644#2345#0" />
+            <element signature="e#2369#2925#0" />
+            <element signature="e#3658#4411#0" />
+            <element signature="e#4541#5337#0" />
+            <element signature="e#2963#3061#0" />
+            <element signature="e#3084#3186#0" />
+            <element signature="e#3087#3199#0" />
+            <element signature="e#3226#3323#0" />
+            <element signature="e#3348#3411#0" />
+            <element signature="e#3440#3512#0" />
+            <element signature="e#3539#3621#0" />
+            <element signature="e#3648#3722#0" />
+            <element signature="e#3777#4835#0" />
+            <element signature="e#4862#5410#0" />
+            <element signature="e#5427#6064#0" />
+            <element signature="e#6097#6370#0" />
+            <element signature="e#6395#7019#0" />
+            <element signature="e#7064#7256#0" />
+            <element signature="e#7276#7401#0" />
+            <element signature="e#7437#9691#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/stuInfo.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="96" column="46" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
+          <folding>
+            <element signature="n#view#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#block#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#block#1;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#block#2;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#block#4;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#1;n#view#0;n#!!top" />
+            <element signature="n#view#2;n#view#0;n#!!top" />
+            <element signature="n#view#3;n#view#0;n#!!top" />
+            <element signature="n#view#4;n#view#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/search/search.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="59" column="109" selection-start-line="59" selection-start-column="109" selection-end-line="59" selection-end-column="109" />
+          <folding>
+            <element signature="n#view#0;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#1;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#0;n#view#2;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#view#1;n#view#2;n#view#0;n#view#0;n#!!top" />
+            <element signature="n#style#0;n#text#0;n#view#0;n#view#0;n#view#1;n#view#2;n#view#0;n#view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/mine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="37" />
+          <folding>
+            <element signature="e#1994#2437#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/stuInfo/askOut/askOut.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/dataManagement/dataManagement.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/mine/dataManagement/dataManagement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/find/oneupdata/oneupdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="347" column="20" selection-start-line="347" selection-start-column="20" selection-end-line="347" selection-end-column="66" />
+          <folding>
+            <element signature="e#37#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

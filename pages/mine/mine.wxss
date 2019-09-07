@@ -1,0 +1,280 @@
+.mine {
+  width: 750rpx;
+}
+.mine .container {
+  width: 750rpx;
+  /*padding-top:128rpx;*/
+  min-height: 1000rpx;
+  background-color: #E9E9E9;
+  /*.stuNumber::before{*/
+  /*content:' ';*/
+  /*position:absolute;*/
+  /*left:50%;*/
+  /*height:72rpx;*/
+  /*width:1rpx;*/
+  /*background-color:#E9E9E9;*/
+  /*top:calc(50% - 35.5rpx);*/
+  /*}*/
+}
+.mine .container .show {
+  background: url("http://loveproject.oss-cn-beijing.aliyuncs.com/1567505569/mineBg.png");
+  height: 275rpx;
+  padding: 0rpx 24rpx;
+  position: relative;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+}
+.mine .container .show .show-box {
+  width: 702rpx;
+  height: 120rpx;
+  position: absolute;
+  /*border:1rpx solid red;*/
+  top: 40rpx;
+}
+.mine .container .show .show-box .picture {
+  width: 120rpx;
+  height: 120rpx;
+  border: 4rpx solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2rpx 25rpx 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+.mine .container .show .show-box .picture image {
+  display: inline-block;
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+}
+.mine .container .show .show-box .message {
+  position: absolute;
+  top: 0rpx;
+  left: 144rpx;
+  display: inline-block;
+  height: 120rpx;
+  width: 555rpx;
+  /*text:last-child{*/
+  /*height:37rpx;*/
+  /*line-height:37rpx;*/
+  /*font-size: 26rpx;*/
+  /*color: #c5c5c5;*/
+  /*letter-spacing: 0;*/
+  /*opacity:0.8;*/
+  /*}*/
+}
+.mine .container .show .show-box .message .out1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #222222;
+  color: #ffffff;
+  margin-left: 20rpx;
+  border: 1rpx solid #ffffff;
+  padding: 5rpx;
+  border-radius: 40rpx;
+  letter-spacing: 0;
+}
+.mine .container .show .show-box .message text {
+  color: #FFFFFF;
+  display: block;
+}
+.mine .container .show .show-box .message text:first-child {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 36rpx;
+  letter-spacing: 0;
+  font-weight: bold;
+  margin-top: 15rpx;
+  color: #FFFFFF;
+}
+.mine .container .show .show-box .message .gl {
+  /*z-index:1000;*/
+  position: absolute;
+  right: 0rpx;
+  top: calc(50% - 12rpx);
+  color: #ffffff;
+  width: 14rpx;
+  height: 24rpx;
+  line-height: 24rpx;
+  text-align: center;
+  font-size: 24rpx;
+  /*border:1rpx solid black;*/
+}
+.mine .container .stuNumber {
+  background-color: #ffffff;
+  position: absolute;
+  top: 200rpx;
+  /*left:200rpx;*/
+  /*width:702rpx;*/
+  width: 702rpx;
+  height: 150rpx;
+  margin: 0rpx 24rpx;
+  /*margin-left:200rpx;*/
+  display: flex;
+  box-shadow: 0 2rpx 30rpx 0 rgba(245, 57, 7, 0.05);
+  border-radius: 10rpx;
+}
+.mine .container .stuNumber view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.mine .container .stuNumber view text:first-child {
+  font-size: 32rpx;
+  color: #FE4345;
+  letter-spacing: 0;
+  height: 45rpx;
+  line-height: 45rpx;
+}
+.mine .container .stuNumber view text:last-child {
+  height: 36rpx;
+  font-size: 26rpx;
+  color: #222222;
+  letter-spacing: 0;
+  line-height: 36rpx;
+}
+.mine .container .prize {
+  width: 750rpx;
+  height: 320rpx;
+  margin-top: 99rpx;
+  background-color: #ffffff;
+}
+.mine .container .prize .message {
+  width: 702rpx;
+  margin: 24rpx;
+  margin-bottom: 0rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mine .container .prize .message .box {
+  display: flex;
+  align-items: center;
+}
+.mine .container .prize .message view:first-child text:first-child {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 50%;
+  margin-right: 32rpx;
+  background-size: cover;
+}
+.mine .container .prize .message view:last-child text:last-child {
+  text-align: center;
+  line-height: 40rpx;
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  color: #C7C7CC;
+}
+.mine .container .prize .medal {
+  width: 750rpx;
+  height: 254rpx;
+  display: flex;
+}
+.mine .container .prize .medal .medal-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.mine .container .prize .medal .medal-box text:first-child {
+  width: 140rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  text-align: center;
+  background: #FFF8DC;
+  border-radius: 50%;
+}
+.mine .container .prize .medal .medal-box text:last-child {
+  height: 37rpx;
+  line-height: 37rpx;
+  font-size: 26rpx;
+  color: #666666;
+  letter-spacing: 0;
+}
+.mine .container .menu {
+  margin-top: 99rpx;
+  background-color: #ffffff;
+}
+.mine .container .menu .list {
+  width: 750rpx;
+  /*height:400rpx;*/
+}
+.mine .container .menu .list .content {
+  position: relative;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.mine .container .menu .list .content text:first-child {
+  display: inline-block;
+  height: 40rpx;
+  width: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0rpx 24rpx;
+  background-size: cover;
+}
+.mine .container .menu .list .content text.dot {
+  position: absolute;
+  right: 90rpx;
+  color: red;
+}
+.mine .container .menu .list .content text:last-child {
+  position: absolute;
+  right: 30rpx;
+  top: calc(50% - 14rpx);
+  display: inline-block;
+  height: 28rpx;
+  width: 16rpx;
+  line-height: 28rpx;
+  text-align: center;
+  background-position: -3rpx 0rpx;
+  background-size: cover;
+  /*border:1rpx solid red;*/
+}
+.mine .container .menu .list .content::before {
+  content: " ";
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  height: 1rpx;
+  width: 650rpx;
+  background-color: #E9E9E9;
+}
+.mine .container .noMargin {
+  margin-top: 0rpx;
+}
+.mine .out {
+  position: fixed;
+  bottom: 0rpx;
+  width: 750rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  background-color: #EBEFF2;
+}
+.mine .out text {
+  width: 122rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #222222;
+  letter-spacing: 0;
+}
+.mine .bottomClass {
+  padding-bottom: 0rpx;
+}
+.mine .bottomClassrpx {
+  padding-bottom: 500rpx;
+}

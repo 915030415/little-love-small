@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "stu-Mes-List": "../../components/stuMesList/stuMesList"
+  }
+}

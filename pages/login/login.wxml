@@ -1,0 +1,20 @@
+<!--pages/login/login.wxml-->
+<view class="login-page">
+    <!--<top-header :close="true" title="壹点爱基金"></top-header>-->
+    <view class="content">
+        <view class = "box">
+            <text class = "heart"></text>
+        </view>
+        <view class="login-title">{{phoneTitle}}</view>
+        <view class = "vux-group">
+            <!--<x-input title="" v-model="mobile" :show-clear="false" placeholder = "请输入手机号码" @@on-click-clear-icon="clear" class = " oinput number"></x-input>-->
+            <!--<x-input title="" type = "password" v-model="code" :show-clear="false" placeholder = "请输入密码" class = " oinput"></x-input>-->
+            <input type="text" id = "text" class = "oinput" bindinput = "inputchange" placeholder = "请输入手机号码" />
+            <input type="password" id = "password" class = "oinput" bindinput = "inputchange"  placeholder = "请输入密码" />
+            <!--<text class = "code">获取验证码</text>-->
+        </view>
+        <text class = "loginMes" bindtap = "toLogin">{{loginMes}}</text>
+        <text class = "btn" bindtap = "login" wx:if = "{{register}}">登录</text>
+        <text class = "btn register" wx:if="{{!register}}" bindtap = "registerWay">注册</text>
+    </view>
+</view>

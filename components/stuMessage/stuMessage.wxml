@@ -1,0 +1,35 @@
+<!--comviewonents/stuMessage/stuMessage.wxml-->
+<view class="stuMessage">
+    <view class="stuMessage-box">
+        <stuTitle content = "学生个人信息"></stuTitle>
+        <view class="content">
+            <view wx:if="{{stuInfo.school_comment}}">
+                <!--这是一个超级乖巧的孩子，他热爱学习，勤奋而又努力，在超越自我的路上也不忘记助人为乐。他团结同学，帮助老师，在家中更是一个贴心孩子。-->
+                <!--因为工作的原因，他的父亲在一次工厂着火中失去了能力。如此重大的天灾降临在他身上，而他依然坚强着，不仅要完成学业，并且要干家里的农活。-->
+                <!---->
+                <view><text></text><text>老师评价:</text></view>{{stuInfo.school_comment}}
+            </view>
+            <view wx:if="{{stuInfo.school_progress}}">
+                <view><text></text><text>学生近况:</text></view>{{stuInfo.school_progress}}
+            </view>
+            <view wx:if="{{stuInfo.student_inneed}}">
+                <view><text></text><text>是否正在接受其他资助:</text></view>{{stuInfo.student_inneed}}
+            </view>
+            <view wx:if = "{{stuInfo.reject_reason}}">
+                <view><text></text><text>资格被取消原因:</text></view>{{stuInfo.reject_reason}}
+            </view>
+            <!--<view>-->
+                <!--<view><text></text><text>老师评价:</text></view>{{stuInfo.school_comment}}-->
+            <!--</view>-->
+            <!--<view >-->
+                <!--<view><text></text><text>学生近况:</text></view>{{stuInfo.school_viewrogress}}-->
+            <!--</view>-->
+            <!--<view >-->
+                <!--<view><text></text><text>是否正在接受其他资助:</text></view>{{stuInfo.student_inneed}}-->
+            <!--</view>-->
+            <!--<view >-->
+                <!--<view><text></text><text>资格被取消原因:</text></view>{{stuInfo.reject_reason}}-->
+            <!--</view>-->
+        </view>
+    </view>
+</view>

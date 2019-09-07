@@ -1,0 +1,74 @@
+.find {
+  width: 750rpx;
+}
+.find .container {
+  width: 750rpx;
+  padding-bottom: 179.5rpx;
+}
+.find .container .mess {
+  margin-top: 300rpx;
+  width: 100%;
+  text-align: center;
+  color: #ccc;
+}
+.find .container .search {
+  width: 750rpx;
+  height: 138rpx;
+  line-height: 138rpx;
+  text-align: center;
+  position: relative;
+}
+.find .container .search input {
+  display: inline-block;
+  width: 702rpx;
+  height: 80rpx;
+  background: #F5F5F5;
+  border: 1rpx solid #E9E9E9;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+  letter-spacing: 0;
+}
+.find .container .search input::placeholder {
+  color: #B2B2B2;
+}
+.find .container .search text {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 58rpx;
+  left: 54rpx;
+  /*border:1rpx solid red;*/
+  background-size: cover;
+}
+.find .container .fill {
+  width: 120rpx;
+  height: 120rpx;
+  position: fixed;
+  z-index: 1000;
+  left: 570rpx;
+  bottom: 120rpx;
+  background-image: linear-gradient(-135deg, #FF4343 0%, #F04E69 100%);
+  box-shadow: 0 2rpx 40rpx 0 rgba(245, 57, 7, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.find .container .fill .fill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.find .container .fill .fill-box text:first-child {
+  width: 30rpx;
+  height: 23.3rpx;
+  background-size: cover;
+  margin-bottom: 10rpx;
+}
+.find .container .fill .fill-box text:last-of-type {
+  font-size: 24rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+}

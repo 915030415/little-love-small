@@ -1,0 +1,88 @@
+.login-page {
+  padding-top: 128rpx;
+}
+.login-page .content .box {
+  position: relative;
+  height: 180rpx;
+  width: 180rpx;
+  margin-top: 100rpx;
+  margin-left: 285rpx;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 2rpx 30rpx 0 rgba(87, 38, 38, 0.15);
+  background-image: url("http://loveproject.oss-cn-beijing.aliyuncs.com/1564989313/ico_logo.svg");
+  background-size: cover;
+  background-position: center center;
+}
+.login-page .content .login-title {
+  font-weight: bold;
+  margin-top: 60rpx;
+  height: 59rpx;
+  font-size: 42rpx;
+  line-height: 59rpx;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+}
+.login-page .content .vux-group {
+  width: 100%;
+  position: relative;
+  margin-top: 100rpx;
+}
+.login-page .content .vux-group .oinput {
+  border-bottom: 1rpx solid #E5E5E5;
+  padding: 20rpx 0;
+  margin-top: 62rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+}
+.login-page .content .vux-group .number {
+  margin-bottom: 60rpx;
+}
+.login-page .content .vux-group .code {
+  position: absolute;
+  right: 60rpx;
+  bottom: 20rpx;
+  width: 130rpx;
+  height: 37rpx;
+  height: 50rpx;
+  font-size: 26rpx;
+  color: #222222;
+  letter-spacing: 0rpx;
+  line-height: 37rpx;
+  line-height: 50rpx;
+  padding: 0rpx 10rpx;
+  color: #ffffff;
+  background: #FF4343;
+  border-radius: 30rpx;
+}
+.login-page .content .vux-group .code::before {
+  content: " ";
+  position: absolute;
+  left: -20rpx;
+  top: 14rpx;
+  width: 1rpx;
+  height: 20rpx;
+  border-left: 1rpx solid #D1D1D1;
+}
+.login-page .content .loginMes {
+  margin-top: 30rpx;
+  margin-left: 60rpx;
+  font-size: 26rpx;
+  color: #F04E69;
+}
+.login-page .content .btn {
+  margin-top: 120rpx;
+  display: inline-block;
+  margin-left: 60rpx;
+  width: 630rpx;
+  height: 90rpx;
+  border-radius: 45rpx;
+  background-image: linear-gradient(-135deg, #FF4343 0%, #F04E69 100%);
+  box-shadow: 0 2rpx 20rpx 0 rgba(245, 57, 7, 0.2);
+  outline: none;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #FFFFFF;
+}

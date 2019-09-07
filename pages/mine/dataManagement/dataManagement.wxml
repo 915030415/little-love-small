@@ -1,0 +1,16 @@
+<!--pages/mine/dataManagement/dataManagement.wxml-->
+<view class="dataManagement">
+    <view class="container">
+
+        <view
+                     class = "content"
+                     v-for = "mes"
+                     wx:key = "*this"
+                     bindtap = "setStorage"
+                     data-index = "{{index}}"
+        >
+            <text class="{{item.className}}"></text>
+            <text>{{item.title}}</text>
+        </view>
+    </view>
+</view>

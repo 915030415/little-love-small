@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-cell": "../../../components/mycell/cell/cell/",
+    "mp-cells": "../../../components/mycell/cells/cells",
+    "mp-form": "../../../components/form/form/form",
+    "mp-uploader": "../../../components/uploader/uploader/uploader"
+  }
+}

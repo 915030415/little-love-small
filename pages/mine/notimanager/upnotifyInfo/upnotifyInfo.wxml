@@ -1,0 +1,50 @@
+<!--pages/mine/notimanager/upnotifyInfo/upnotifyInfo.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <mp-cells>
+            <view class = "stuAddr">标题 <text>*</text></view>
+            <view class="section">
+                <textarea id = "noti_title" maxlength = "50" bindinput="formInputChange" auto-height placeholder="请输入" />
+                <text class="word">{{stuHelpLength}}/100</text>
+            </view>
+
+            <view class = "stuAddr">通知内容 <text>*</text></view>
+            <view class="section">
+                <textarea id = "noti_text" prop = "stuAddr"  bindinput="formInputChange" auto-height placeholder="请输入" />
+                <!--<text class="word">{{stuAddrLength}}/100</text>-->
+            </view>
+
+            <view class="section">
+                <picker bindchange="bindPickerChange" id = "noti_group" value="{{index}}" range="{{array}}">
+                    <view class="picker">
+                        <text> <text>通知人群</text><text>*</text></text>
+                        <text>{{array[index]}}</text>
+                    </view>
+                </picker>
+            </view>
+        </mp-cells>
+
+        <view class = "photo">
+            <!--<text class = "start">*</text>-->
+            <view class='ui_cell'>
+                <view class='ui_cell_bd'>附件<text>*</text></view>
+                <view class='ui_cell_ft'>{{uploaderNum}}/9</view>
+            </view>
+            <view class='ui_uploader_cell'>
+                <view class='ui_uploader_item' wx:for="{{uploaderList}}" wx:key="{{index}}">
+                    <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" type="clear" size="20" color="red"/>
+                    <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+                </view>
+                <view class='ui_uploader' bindtap='upload' wx:if="{{showUpload}}"></view>
+            </view>
+
+        </view>
+        <!--<view class="weui-btn-area">-->
+        <!--<button class="weui-btn" type="primary" bindtap="submitForm">确定</button>-->
+    </view>
+    <!--</view>-->
+    <view class="next">
+        <text class = "message" bind:tap = "submitForm">提交</text>
+        <!--<button class="message" type="primary" formType="submit">下一步</button>-->
+    </view>
+</view>

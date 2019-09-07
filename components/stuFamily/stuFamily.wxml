@@ -1,0 +1,68 @@
+<!--components/stuFamily/stuFamily.wxml-->
+<view class="stuFamily">
+    <view class="box">
+        <stuTitle content = "家庭资料"></stuTitle>
+           <view class="message" >
+               <view class="menu">
+                   <text></text><text> 家人信息</text>
+               </view>
+               <view class="describe" >
+                   <text wx:if="{{familyInfo.family_name}}">姓名{{familyInfo.family_name}}</text>
+                   <text wx:if="{{idCard}}">身份证{{idCard}}</text>
+                   <text wx:if="{{familyInfo.family_relation}}">与学生关系{{familyInfo.family_relation}}</text>
+               </view>
+           </view>
+        <view class="mess"
+              wx:if="{{!flagApply}}"
+        >
+            暂无数据
+        </view>
+           <view class="situation"
+                 wx:for = "{{progressImgArr}}"
+                 wx:key = "*this"
+           >
+               <view class="menu">
+                   <text></text>
+                   <text>家庭情况</text>
+               </view>
+               <view class="describe">
+                   <text class="detailed" wx:if = "{{progressText}}">{{progressText}}</text>
+                   <view class = "picture">
+                       <!--<img-->
+                       <!--v-for="(item2,index2) in item"-->
+                       <!--:key = "index2"-->
+                       <!--:src="item2" alt="">-->
+                       <image wx:for="{{item}}"
+                              wx:for-index = "index2"
+                              wx:for-item = "item2"
+                              wx:key = "*index2"
+                              src="{{item2}}"></image>
+                   </view>
+               </view>
+           </view>
+           <view class="talk"
+                 wx:for = "{{letterImgArr}}"
+                 wx:if="{{flagLetter}}"
+                 wx:key = "*this"
+           >
+               <view class="menu">
+                   <text></text>
+                   <text>家人想对您说的话</text>
+               </view>
+               <view class="box">
+                   <view class="picture">
+                       <!--<img src="../../../assets/1.png" alt="">-->
+                       <!--<img-->
+                       <!--v-for = "(item2,index2) in progressImgArr"-->
+                       <!--key = "index2"-->
+                       <!--:src="item2" alt="">-->
+                       <image wx:for = "{{item}}"
+                              wx:for-index = "index3"
+                              wx:for-item = "item3"
+                              wx:key = "*index3"
+                              src = "{{item3}}"></image>
+                   </view>
+               </view>
+           </view>
+    </view>
+</view>

@@ -1,0 +1,89 @@
+.thankInfo {
+  width: 100%;
+  background-color: #E9E9E9;
+}
+.thankInfo .container {
+  /*padding-top:128rpx;*/
+  /*padding-bottom:84rpx;*/
+}
+.thankInfo .container .mes .stu {
+  background-color: #ffffff;
+  height: 155.5rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 28rpx;
+}
+.thankInfo .container .mes .stu .box {
+  width: 722rpx;
+  height: 100%;
+  border-bottom: 1rpx solid #E9E9E9;
+  display: flex;
+  align-items: center;
+}
+.thankInfo .container .mes .stu .box view:first-of-type {
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  text-align: center;
+  border: 4rpx solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 2rpx 25rpx 0 rgba(0, 0, 0, 0.2);
+}
+.thankInfo .container .mes .stu .box view:first-of-type image {
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+  vertical-align: center;
+}
+.thankInfo .container .mes .stu .box view:last-of-type {
+  margin-left: 24rpx;
+  height: 100%;
+  padding: 21rpx 0rpx;
+}
+.thankInfo .container .mes .stu .box view:last-of-type text {
+  display: block;
+}
+.thankInfo .container .mes .stu .box view:last-of-type text:first-of-type {
+  font-size: 36rpx;
+  color: #000000;
+  letter-spacing: 0;
+}
+.thankInfo .container .mes .stu .box view:last-of-type text:last-of-type {
+  margin-top: 13rpx;
+  font-size: 26rpx;
+  color: #000000;
+  letter-spacing: 0;
+  opacity: 0.6;
+}
+.thankInfo .container .mes .title {
+  width: 100%;
+  padding: 29.5rpx 0rpx 20rpx 28rpx;
+  background-color: #ffffff;
+}
+.thankInfo .container .mes .title text {
+  display: block;
+}
+.thankInfo .container .mes .title text:first-of-type {
+  font-size: 36rpx;
+  color: #000000;
+  letter-spacing: 0.53rpx;
+  line-height: 34rpx;
+}
+.thankInfo .container .mes .title text:last-of-type {
+  margin-top: 16rpx;
+  font-size: 26rpx;
+  color: #999999;
+  text-align: justify;
+  line-height: 42rpx;
+}
+.thankInfo .container .mes .content {
+  padding-bottom: 50rpx;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0rpx 28rpx 84rpx;
+}
+.thankInfo .container .mes .content image {
+  width: 694rpx;
+  height: 800rpx;
+  border-radius: 10rpx;
+}

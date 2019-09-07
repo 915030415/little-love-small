@@ -1,0 +1,34 @@
+<!--pages/mine/history/history.wxml-->
+<view class="history">
+    <!--<view class="header">-->
+    <!--<top-header :close="true" title="我的账目"/>-->
+    <!--</view>-->
+    <view class="container">
+        <view class="box"
+             wx:for="{{accounts}}"
+             wx:key="{{item}}"
+              bindtap="spread"
+              data-index = "{{index}}"
+              data-code = "{{item.code}}"
+        >
+            <view class="content">
+             <text>
+             <text>{{item.title}}</text>
+             <text>{{item.time}}</text>
+           </text>
+                <text>{{item.money}}</text>
+            </view>
+            <view class="progress" wx:if="{{item.spreadFlag}}">
+                <view
+                        wx:for = "{{item.progress}}"
+                        wx:for-item = "k"
+                        wx:for-index = "i"
+                        wx:key="i"
+                >
+                    <text>{{k.time}}</text>
+                    <text>{{k.mes}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

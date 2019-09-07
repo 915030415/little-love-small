@@ -1,0 +1,36 @@
+<!--pages/mine/notimanager/notimanager.wxml-->
+<view class="notiManager">
+    <!--<view class="header">-->
+    <!--<top-header :close="true" title="通知管理"/>-->
+    <!--</view>-->
+    <!--<text class = "backHuiTUi" bindtap = "backHuiTUi"></text>-->
+    <view class="footer" wx:if = "{{flag}}">
+        <text bindtap = "noti">发布通知</text>
+    </view>
+    <view class="container">
+        <view class="mess"
+             wx:if="{{!flagApply}}"
+        >
+            暂无数据
+        </view>
+        <view
+                wx:for="{{stu}}"
+                wx:key="*this"
+                wx:for-item = "item"
+                class="box"
+                bindtap = "setContent"
+                data-index = "{{index}}">
+            <view>
+                <text></text>
+            </view>
+            <view>
+        <text>
+          <text>{{item.noti_title}} </text>
+          <text>{{item.letter_time}}</text>
+        </text>
+                <text> {{item.noti_text}} </text>
+            </view>
+        </view>
+    </view>
+
+</view>

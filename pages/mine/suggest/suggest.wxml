@@ -1,0 +1,30 @@
+<!--pages/mine/suggest/suggest.wxml-->
+<view class="suggest">
+    <!--<view class="header">-->
+    <!--<top-header :close="true" title="意见反馈"/>-->
+    <!--</view>-->
+    <!--<text class = "backHuiTUi" @click = "backHuiTUi"></text>-->
+    <view class="container">
+        <view>
+            <text></text>
+            <text>壹点爱助学服务中心</text>
+        </view>
+        <view>
+          <text>
+            <text> 邮箱： </text>
+            <text>|</text>
+            <text>arlu@yidianai.com</text>
+          </text>
+            <text>
+            <text>电话/微信：</text>
+            <text>|</text>
+            <text>18938796649</text>
+          </text>
+            <text>
+            <text> 投诉：</text>
+            <text>|</text>
+            <text>zijianluo@163.com</text>
+          </text>
+        </view>
+    </view>
+</view>

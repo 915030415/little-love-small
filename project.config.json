@@ -1,0 +1,169 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.1",
+	"appid": "wx338d79828fae57b3",
+	"projectname": "%E5%A3%B9%E7%82%B9%E7%88%B1%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 15,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/find/find",
+					"pathName": "pages/find/find",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/find/information/information",
+					"pathName": "pages/find/information/information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/find/oneupdata/oneupdata",
+					"pathName": "pages/find/oneupdata/oneupdata",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/find/twoupdata/twoupdata",
+					"pathName": "pages/find/twoupdata/twoupdata",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/find/threeupdata/threeupdata",
+					"pathName": "pages/find/threeupdata/threeupdata",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/find/information/information",
+					"pathName": "pages/find/information/information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "pages/mine/myinfo/myinfo",
+					"pathName": "pages/mine/myinfo/myinfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/history/history",
+					"pathName": "pages/mine/history/history",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/count/count",
+					"pathName": "pages/mine/count/count",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/search/search",
+					"pathName": "pages/mine/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/search/search",
+					"pathName": "pages/mine/search/search",
+					"query": "id=help",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/find/oneupdata/oneupdata",
+					"pathName": "pages/find/oneupdata/oneupdata",
+					"query": "id=help",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/find/oneupdata/oneupdata",
+					"pathName": "pages/find/oneupdata/oneupdata",
+					"query": "id=help",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.stuMessage {
+  margin-top: 16rpx;
+  background-color: #ffffff;
+  width: 750rpx;
+}
+.stuMessage .stuMessage-box .content {
+  /*height: 337rpx;*/
+  padding: 24rpx;
+}
+.stuMessage .stuMessage-box .content view {
+  font-size: 28rpx;
+  color: #666666;
+  letter-spacing: 0;
+  line-height: 48rpx;
+  /*white-space: normal;*/
+  word-break: break-word;
+}
+.stuMessage .stuMessage-box .content view view {
+  position: relative;
+}
+.stuMessage .stuMessage-box .content view view text:last-of-type {
+  /*display:block;*/
+  font-size: 30rpx;
+  color: #000000;
+  letter-spacing: 0;
+  margin-left: 20rpx;
+}
+.stuMessage .stuMessage-box .content view view text:first-of-type {
+  position: absolute;
+  top: 10rpx;
+  display: inline-block;
+  width: 4rpx;
+  height: 33rpx;
+  background: #FE4345;
+  border-radius: 2rpx;
+}

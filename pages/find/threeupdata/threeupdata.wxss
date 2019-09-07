@@ -1,0 +1,11 @@
+.section.photo {
+  border-bottom: none;
+}
+
+.photo.progress {
+  min-height: 500rpx;
+}
+
+.photo.letter {
+  min-height: 550rpx;
+}

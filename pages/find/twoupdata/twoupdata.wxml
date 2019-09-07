@@ -1,0 +1,79 @@
+<!--pages/find/twoupdata/twoupdata.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <mp-cells>
+            <view class = "mes">
+                学校资料
+            </view>
+            <mp-cell prop="money" title="校方负责人" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="school_people"  class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+            <mp-cell prop="money" title="校方联系方式" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="school_contact"  class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+            <view class = "section">
+                <picker mode="region" id = "schoolArea" bindchange="bindPickerChange" value="{{region}}">
+                    <view class="picker">
+                        <text><text>学校地址</text><text>*</text></text>
+                        <text>{{region[0]}}，{{region[1]}}，{{region[2]}}</text>
+                    </view>
+                </picker>
+            </view>
+            <view class = "stuAddr">学校住址详细 <text>*</text></view>
+            <view class="section">
+                <textarea id = "school_address"  bindinput="formInputChange" auto-height placeholder="请输入" />
+                <text class="word">{{shcoolAddrLength}}/100</text>
+            </view>
+            <mp-cell  title="班主任" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="school_teacher"  class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+            <mp-cell prop="money" title="班主任手机号码" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="school_teacher_number"  class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+            <view class = "stuAddr">学生近况 <text>*</text></view>
+            <view class="section">
+                <textarea  id = "stuProgress" bindinput="formInputChange" auto-height placeholder="请输入" />
+                <text class="word">{{stuProgressLength}}/500</text>
+            </view>
+            <view class = "stuAddr">老师对学生的评价</view>
+            <view class="section">
+                <textarea id = "comment" bindinput="formInputChange" auto-height placeholder="请输入" />
+                <text class="word">{{commentLength}}/500</text>
+            </view>
+        <view class = "photo">
+            <!--<text class = "start">*</text>-->
+            <view class='ui_cell'>
+                <view class='ui_cell_bd'>成绩单<text>*</text></view>
+                <view class='ui_cell_ft'>{{uploaderNum}}/6</view>
+            </view>
+            <view class='ui_uploader_cell'>
+                <view class='ui_uploader_item' wx:for="{{uploaderList}}" wx:key="{{index}}">
+                    <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" type="clear" size="20" color="red"/>
+                    <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+                </view>
+                <view class='ui_uploader' bindtap='upload' wx:if="{{showUpload}}"></view>
+            </view>
+        </view>
+        </mp-cells>
+        <!--<view class="weui-btn-area">-->
+        <!--<button class="weui-btn" type="primary" bindtap="submitForm">确定</button>-->
+    </view>
+
+    <!--</view>-->
+    <view class="next">
+        <text class = "message" bind:tap = "submitForm">下一步</text>
+        <!--<button class="message" type="primary" formType="submit">下一步</button>-->
+    </view>
+</view>

@@ -1,0 +1,60 @@
+.history{
+  .container{
+    background-color:#ffffff;
+    width:750rpx;
+    //padding-top:128rpx;
+    .box{
+      .content{
+        height:140rpx;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:0rpx 24rpx;
+        text:first-of-type{
+          text{
+            display:block;
+          }
+          text:first-of-type{
+            font-size: 28rpx;
+            color: #000000;
+            letter-spacing: 0;
+          }
+          text:last-of-type{
+            font-size: 26rpx;
+            color: #999999;
+            letter-spacing: 0;
+          }
+        }
+        text:last-of-type{
+          height:96rpx;
+          line-height: 96rpx;
+          font-size: 34rpx;
+          color: #FE4345;
+          letter-spacing: 0;
+        }
+      }
+      .progress{
+        padding:0rpx 24rpx 27.5rpx;
+        view{
+          margin-top:27.5rpx;
+          height:37rpx;
+          line-height: 37rpx;
+          text:first-of-type{
+            height:37rpx;
+            font-size: 26rpx;
+            color: #999999;
+            letter-spacing: 0;
+          }
+          text:last-of-type{
+            margin-left:60rpx;
+            height:37rpx;
+            font-size: 26rpx;
+            color: #222222;
+            letter-spacing: 0;
+          }
+        }
+      }
+      border-bottom:1rpx solid #E9E9E9;
+    }
+  }
+}

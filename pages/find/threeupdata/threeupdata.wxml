@@ -1,0 +1,98 @@
+<!--pages/find/threeupdata/threeupdata.wxml-->
+
+<view class="page">
+    <view class="page__bd">
+        <mp-cells>
+            <view class = "mes">
+                家庭资料
+            </view>
+            <mp-cell  title="家人姓名" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="family_name"  class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+            <mp-cell  title="身份证号码" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="family_id_number" class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+            <mp-cell title="联系方式" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange" id="family_contact" class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+            <mp-cell  title="与学生的关系" ext-class="">
+                <text class = "start">*</text>
+                <input bindinput="formInputChange"  id="family_relation" class="weui-input" placeholder="请输入"/>
+                <!--<view slot="icon">*</view>-->
+                <!--title="资助金额/学期"-->
+            </mp-cell>
+            <view class = "section">
+                <picker mode="region" id = "region" bindchange="bindPickerChange" value="{{region}}">
+                    <view class="picker">
+                        <text><text>家庭地址</text><text>*</text></text>
+                        <text>{{region[0]}}，{{region[1]}}，{{region[2]}}</text>
+                    </view>
+                </picker>
+            </view>
+            <view class = "stuAddr">家庭详细地址 <text>*</text></view>
+            <view class="section">
+                <textarea id = "family_address"  bindinput="formInputChange"  maxlength = "100" auto-height placeholder="请输入" />
+                <text class="word">{{family_addressLength}}/100</text>
+            </view>
+            <view class = "stuAddr">家庭情况 <text>*</text></view>
+            <view class="section progress">
+                <textarea id = "family_progressText" prop = "stuAddr"  maxlength = "500" bindinput="formInputChange" auto-height placeholder="请输入" />
+                <text class="word">{{family_progressTextLength}}/500</text>
+            </view>
+        <view class = "photo progress">
+            <!--<text class = "start">*</text>-->
+            <!--<view class='ui_cell'>-->
+            <!--&lt;!&ndash;<view class='ui_cell_bd'>学生个人照片<text>*</text></view>&ndash;&gt;-->
+            <!--</view>-->
+
+            <view class='ui_uploader_cell'>
+                <view class='ui_cell_ft'>{{uploaderNum1}}/6</view>
+                <view class='ui_uploader_item' wx:for="{{uploaderList1}}" wx:key="{{index}}">
+                    <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" data-type = "1" type="clear" size="20" color="red"/>
+                    <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+                </view>
+                <view class='ui_uploader' bindtap='upload' data-index = "1" wx:if="{{showUpload1}}"></view>
+            </view>
+
+        </view>
+        <view class = "photo letter">
+            <!--<text class = "start">*</text>-->
+            <view class='ui_cell'>
+                <view class='ui_cell_bd'>家人感谢信</view>
+                <view class='ui_cell_ft'>{{uploaderNum2}}/6</view>
+            </view>
+            <view class='ui_uploader_cell'>
+                <view class='ui_uploader_item' wx:for="{{uploaderList2}}" wx:key="{{index}}">
+                    <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" data-type = "2" type="clear" size="20" color="red"/>
+                    <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+                </view>
+                <view class='ui_uploader' bindtap='upload' data-index = "2" wx:if="{{showUpload2}}"></view>
+            </view>
+        </view>
+        <view class = "stuAddr">备注</view>
+        <view class="section">
+            <!--<textarea  id = "family_note" bindinput="formInputChange" maxlength = "500" auto-height placeholder="请输入" />-->
+            <textarea id = "family_note"  maxlength = "500" bindinput="formInputChange" auto-height placeholder="请输入" />
+            <text class="word">{{family_noteLength}}/500</text>
+        </view>
+        </mp-cells>
+        <!--<view class="weui-btn-area">-->
+        <!--<button class="weui-btn" type="primary" bindtap="submitForm">确定</button>-->
+    </view>
+    <!--</view>-->
+    <view class="next">
+        <text class = "message" bind:tap = "submitForm">下一步</text>
+        <!--<button class="message" type="primary" formType="submit">下一步</button>-->
+    </view>
+</view>
+
+

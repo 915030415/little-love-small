@@ -1,0 +1,6 @@
+<!--components/stuTitle/stuTitle.wxml-->
+<view class="title">
+    <view class="title-box">
+        {{content}}
+    </view>
+</view>

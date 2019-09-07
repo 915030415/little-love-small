@@ -1,0 +1,60 @@
+.information{
+  background-color:#E5E5E5;
+  .wrap{// 蒙层的样式
+    position:absolute;
+    top:0rpx;
+    left:0rpx;
+    z-index:30;
+    width:750rpx;
+    height:400%;
+    background-color: rgba(204,204,204,0.5);
+  }
+
+    //padding-top:128rpx;
+    //padding-bottom:168rpx;
+    background-color:#E5E5E5;
+    //width:750rpx;
+
+    .stuMessage{
+      margin-top:16rpx;
+    }
+    .stuHistory,.stuFamily{
+      margin-top:20rpx;
+    }
+  .success{
+    //display:flex;
+    //flex-direction:column;
+    //justify-content: center;
+    //align-items: center;
+    position:fixed;
+    z-index:50;
+    width:600rpx;
+    height:400rpx;
+    top:500rpx;
+    margin-left:75rpx;
+    background-color:#ffffff;
+    border:1rpx solid #E5E5E5;
+    border-radius:20rpx;
+    font-size: 30rpx;
+    color: #000000;
+    text-align: center;
+    padding-top:80rpx;
+    //line-height: 36rpx;
+    p{
+      margin-top:10rpx;
+    }
+    text{
+      margin-top:30rpx;
+      display:block;
+      width:200rpx;
+      height:80rpx;
+      border-radius:30rpx;
+      margin-left:200rpx;
+      background-color:azure;
+      text-align: center;
+      line-height: 80rpx;
+    }
+  }
+}
+
+
